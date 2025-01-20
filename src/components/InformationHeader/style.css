@@ -1,0 +1,95 @@
+.ama.section_container .grid_container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.ama.section_container .second_column {
+    place-content: center flex-start;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ama.section_container .last_column {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center space-around;
+    align-items: center;
+    background-color: var(--ama-color-background-light-lighter);
+    text-align: center;
+}
+
+.ama.section_container .grid_container_mobile {
+    display: none;
+}
+
+.ama.section_container .first {
+    border-bottom: 1px solid var(--ama-color-grey-50);
+}
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 480px) {
+    .ama.section_container .grid_container {
+        display: none;
+    }
+
+    .ama.section_container .grid_container_mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    .ama.section_container .second_row {
+        align-self: center;
+    }
+
+    .ama.section_container .fourth_row {
+        flex-direction: row;
+        box-sizing: border-box;
+        display: flex;
+        place-content: center space-around;
+        align-items: center;
+        background-color: var(--ama-color-background-light-darker);
+        text-align: center;
+        padding: 1em;
+    }
+
+    .ama.section_container .margin_mobile {
+        margin-bottom: 2em;
+    }
+
+    .ama.section_container .buttons_mobile {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    /* DARK MODE */
+    .ama.section_container.dark .grid_container_mobile .fourth_row {
+        background-color: var(--ama-color-background-dark-darker) !important;
+        color: var(--ama-color-background-white);
+    }
+
+    .ama.section_container.dark {
+        color: var(--ama-color-background-white);
+    }
+}
+
+
+/* DARK MODE */
+.ama.section_container.dark {
+    color: var(--ama-color-background-white) !important;
+    background-color: var(--ama-color-background-dark-lighter) !important;
+}
+
+.ama.section_container.dark h2 {
+    color: var(--ama-color-background-white) !important;
+}
+
+.ama.section_container.dark .grid_container .last_column {
+    background-color: var(--ama-color-background-dark-darker) !important;
+    color: var(--ama-color-background-white);
+}
