@@ -247,16 +247,19 @@
 			"accessibilityDeclarationApplicationsList": [
 				{
 					"id": 2,
+					"line": 1,
 					"name": "ePortugal",
 					"declaration": 1
 				},
 				{
 					"id": 4,
+					"line": 2,
 					"name": "Portal da Defesa Nacional",
 					"declaration": 2
 				},
 				{
-					"id": 5,
+					"id": 3,
+					"line": 3,
 					"name": "Portal SNS",
 					"declaration": 3
 				}
@@ -264,16 +267,19 @@
 			"usabilityAccessibilityStampApplicationsList": [
 				{
 					"id": 2,
+					"line": 1,
 					"name": "ePortugal",
 					"stamp": 1
 				},
 				{
 					"id": 4,
+					"line": 2,
 					"name": "Portal da Defesa Nacional",
 					"stamp": 2
 				},
 				{
 					"id": 5,
+					"line": 3,
 					"name": "Portal SNS",
 					"stamp": 3
 				}
@@ -3028,4292 +3034,15 @@
 				"1": {
 					"id": 1,
 					"name": "Os 25 Portais + Procurados da AP",
-					"oldestPage": "2023-10-16T13:28:01.000Z",
-					"recentPage": "2023-10-16T14:42:10.000Z",
-					"score": 8.486663447825674,
-					"nEntities": 24,
-					"nWebsites": 26,
-					"nPages": 1423,
-					"scoreDistributionFrequency": [
-						0,
-						0,
-						0,
-						0,
-						0,
-						70,
-						322,
-						588,
-						443
-					],
-					"errorDistribution": {
-						"errors": {
-							"button_02": {
-								"n_occurrences": 641,
-								"n_pages": 351,
-								"n_websites": 5
-							},
-							"id_02": {
-								"n_occurrences": 1670,
-								"n_pages": 339,
-								"n_websites": 17
-							},
-							"hx_03": {
-								"n_occurrences": 2363,
-								"n_pages": 368,
-								"n_websites": 20
-							},
-							"table_02": {
-								"n_occurrences": 612,
-								"n_pages": 315,
-								"n_websites": 20
-							},
-							"focus_01": {
-								"n_occurrences": 1197,
-								"n_pages": 98,
-								"n_websites": 8
-							},
-							"landmark_10": {
-								"n_occurrences": 135,
-								"n_pages": 135,
-								"n_websites": 4
-							},
-							"landmark_02": {
-								"n_occurrences": 397,
-								"n_pages": 175,
-								"n_websites": 5
-							},
-							"landmark_04": {
-								"n_occurrences": 133,
-								"n_pages": 132,
-								"n_websites": 5
-							},
-							"label_03": {
-								"n_occurrences": 78,
-								"n_pages": 54,
-								"n_websites": 3
-							},
-							"ehandler_02": {
-								"n_occurrences": 1130,
-								"n_pages": 251,
-								"n_websites": 12
-							},
-							"svg_02": {
-								"n_occurrences": 202,
-								"n_pages": 18,
-								"n_websites": 1
-							},
-							"landmark_14": {
-								"n_occurrences": 47,
-								"n_pages": 47,
-								"n_websites": 2
-							},
-							"landmark_08": {
-								"n_occurrences": 66,
-								"n_pages": 66,
-								"n_websites": 3
-							},
-							"img_01b": {
-								"n_occurrences": 637,
-								"n_pages": 269,
-								"n_websites": 14
-							},
-							"aria_06": {
-								"n_occurrences": 370,
-								"n_pages": 261,
-								"n_websites": 8
-							},
-							"color_02": {
-								"n_occurrences": 3705,
-								"n_pages": 601,
-								"n_websites": 20
-							},
-							"br_01": {
-								"n_occurrences": 126,
-								"n_pages": 49,
-								"n_websites": 14
-							},
-							"a_11": {
-								"n_occurrences": 2937,
-								"n_pages": 288,
-								"n_websites": 20
-							},
-							"ehandler_04": {
-								"n_occurrences": 60,
-								"n_pages": 10,
-								"n_websites": 7
-							},
-							"a_06": {
-								"n_occurrences": 145,
-								"n_pages": 106,
-								"n_websites": 6
-							},
-							"heading_02": {
-								"n_occurrences": 301,
-								"n_pages": 165,
-								"n_websites": 15
-							},
-							"list_03": {
-								"n_occurrences": 615,
-								"n_pages": 376,
-								"n_websites": 11
-							},
-							"input_02": {
-								"n_occurrences": 233,
-								"n_pages": 175,
-								"n_websites": 13
-							},
-							"a_05": {
-								"n_occurrences": 24929,
-								"n_pages": 502,
-								"n_websites": 20
-							},
-							"element_03": {
-								"n_occurrences": 88,
-								"n_pages": 69,
-								"n_websites": 6
-							},
-							"element_05": {
-								"n_occurrences": 4,
-								"n_pages": 3,
-								"n_websites": 3
-							},
-							"element_09": {
-								"n_occurrences": 50,
-								"n_pages": 46,
-								"n_websites": 2
-							},
-							"iframe_05": {
-								"n_occurrences": 11,
-								"n_pages": 8,
-								"n_websites": 5
-							},
-							"a_03": {
-								"n_occurrences": 1169,
-								"n_pages": 140,
-								"n_websites": 15
-							},
-							"label_02": {
-								"n_occurrences": 461,
-								"n_pages": 242,
-								"n_websites": 14
-							},
-							"landmark_06": {
-								"n_occurrences": 216,
-								"n_pages": 207,
-								"n_websites": 6
-							},
-							"layout_01b": {
-								"n_occurrences": 3872,
-								"n_pages": 184,
-								"n_websites": 14
-							},
-							"hx_01a": {
-								"n_occurrences": 162,
-								"n_pages": 161,
-								"n_websites": 7
-							},
-							"listitem_02": {
-								"n_occurrences": 184,
-								"n_pages": 59,
-								"n_websites": 3
-							},
-							"iframe_01": {
-								"n_occurrences": 185,
-								"n_pages": 106,
-								"n_websites": 12
-							},
-							"table_05a": {
-								"n_occurrences": 446,
-								"n_pages": 213,
-								"n_websites": 15
-							},
-							"title_03": {
-								"n_occurrences": 9,
-								"n_pages": 9,
-								"n_websites": 3
-							},
-							"table_06": {
-								"n_occurrences": 18,
-								"n_pages": 10,
-								"n_websites": 6
-							},
-							"img_03": {
-								"n_occurrences": 183,
-								"n_pages": 33,
-								"n_websites": 4
-							},
-							"form_01b": {
-								"n_occurrences": 120,
-								"n_pages": 118,
-								"n_websites": 7
-							},
-							"table_08": {
-								"n_occurrences": 5,
-								"n_pages": 1,
-								"n_websites": 1
-							},
-							"table_04": {
-								"n_occurrences": 23,
-								"n_pages": 9,
-								"n_websites": 5
-							},
-							"role_02": {
-								"n_occurrences": 18,
-								"n_pages": 8,
-								"n_websites": 2
-							},
-							"a_04": {
-								"n_occurrences": 59,
-								"n_pages": 59,
-								"n_websites": 5
-							},
-							"a_02a": {
-								"n_occurrences": 59,
-								"n_pages": 59,
-								"n_websites": 5
-							},
-							"lang_03": {
-								"n_occurrences": 62,
-								"n_pages": 62,
-								"n_websites": 7
-							},
-							"area_01b": {
-								"n_occurrences": 6,
-								"n_pages": 3,
-								"n_websites": 2
-							},
-							"list_07": {
-								"n_occurrences": 4,
-								"n_pages": 4,
-								"n_websites": 2
-							},
-							"landmark_12": {
-								"n_occurrences": 156,
-								"n_pages": 156,
-								"n_websites": 2
-							},
-							"abbr_01": {
-								"n_occurrences": 16,
-								"n_pages": 12,
-								"n_websites": 1
-							},
-							"justif_txt_01": {
-								"n_occurrences": 24,
-								"n_pages": 1,
-								"n_websites": 1
-							},
-							"aria_04": {
-								"n_occurrences": 6,
-								"n_pages": 1,
-								"n_websites": 1
-							}
-						},
-						"graphData": [
-							{
-								"key": "color_02",
-								"elem": "all",
-								"n_pages": 601,
-								"n_websites": 20,
-								"result": "failed"
-							},
-							{
-								"key": "a_05",
-								"elem": "a",
-								"n_pages": 502,
-								"n_websites": 20,
-								"result": "failed"
-							},
-							{
-								"key": "list_03",
-								"elem": "li",
-								"n_pages": 376,
-								"n_websites": 11,
-								"result": "failed"
-							},
-							{
-								"key": "hx_03",
-								"elem": "hx",
-								"n_pages": 368,
-								"n_websites": 20,
-								"result": "failed"
-							},
-							{
-								"key": "button_02",
-								"elem": "button",
-								"n_pages": 351,
-								"n_websites": 5,
-								"result": "failed"
-							},
-							{
-								"key": "id_02",
-								"elem": "id",
-								"n_pages": 339,
-								"n_websites": 17,
-								"result": "failed"
-							},
-							{
-								"key": "table_02",
-								"elem": "tableData",
-								"n_pages": 315,
-								"n_websites": 20,
-								"result": "failed"
-							},
-							{
-								"key": "a_11",
-								"elem": "a",
-								"n_pages": 288,
-								"n_websites": 20,
-								"result": "failed"
-							},
-							{
-								"key": "img_01b",
-								"elem": "img",
-								"n_pages": 269,
-								"n_websites": 14,
-								"result": "failed"
-							},
-							{
-								"key": "aria_06",
-								"elem": "all",
-								"n_pages": 261,
-								"n_websites": 8,
-								"result": "failed"
-							}
-						],
-						"showTableData": [
-							{
-								"key": "button_02",
-								"level": "A",
-								"elem": "button",
-								"websites": 5,
-								"pages": 351,
-								"elems": 641,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 3,
-											"upper": 87
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 151,
-											"upper": 193
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 207,
-											"upper": 207
-										}
-									}
-								]
-							},
-							{
-								"key": "id_02",
-								"level": "A",
-								"elem": "id",
-								"websites": 17,
-								"pages": 339,
-								"elems": 1670,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 29,
-										"int": {
-											"lower": 2,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 5,
-										"por": 29,
-										"int": {
-											"lower": 6,
-											"upper": 14
-										}
-									},
-									{
-										"tot": 4,
-										"por": 24,
-										"int": {
-											"lower": 17,
-											"upper": 32
-										}
-									},
-									{
-										"tot": 3,
-										"por": 18,
-										"int": {
-											"lower": 82,
-											"upper": 1147
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "hx_03",
-								"level": "AAA",
-								"elem": "hx",
-								"websites": 20,
-								"pages": 368,
-								"elems": 2363,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 5,
-											"upper": 14
-										}
-									},
-									{
-										"tot": 6,
-										"por": 30,
-										"int": {
-											"lower": 17,
-											"upper": 52
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 74,
-											"upper": 1059
-										}
-									}
-								],
-								"elemGroup": "heading"
-							},
-							{
-								"key": "table_02",
-								"level": "A",
-								"elem": "tableData",
-								"websites": 20,
-								"pages": 315,
-								"elems": 612,
-								"quartiles": [
-									{
-										"tot": 8,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 11,
-											"upper": 14
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 15,
-											"upper": 36
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 45,
-											"upper": 222
-										}
-									}
-								],
-								"elemGroup": "table"
-							},
-							{
-								"key": "focus_01",
-								"level": "A",
-								"elem": "all",
-								"websites": 8,
-								"pages": 98,
-								"elems": 1197,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 2,
-										"por": 25,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 3,
-										"por": 38,
-										"int": {
-											"lower": 10,
-											"upper": 86
-										}
-									},
-									{
-										"tot": 1,
-										"por": 13,
-										"int": {
-											"lower": 1076,
-											"upper": 1076
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_10",
-								"level": "AA",
-								"elem": "all",
-								"websites": 4,
-								"pages": 135,
-								"elems": 135,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 25,
-										"int": {
-											"lower": 3,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 1,
-										"por": 25,
-										"int": {
-											"lower": 25,
-											"upper": 25
-										}
-									},
-									{
-										"tot": 2,
-										"por": 50,
-										"int": {
-											"lower": 38,
-											"upper": 69
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_02",
-								"level": "AA",
-								"elem": "all",
-								"websites": 5,
-								"pages": 175,
-								"elems": 397,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 25
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 36,
-											"upper": 128
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 207,
-											"upper": 207
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_04",
-								"level": "AA",
-								"elem": "all",
-								"websites": 5,
-								"pages": 132,
-								"elems": 133,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 22,
-											"upper": 39
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 69,
-											"upper": 69
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "label_03",
-								"level": "A",
-								"elem": "all",
-								"websites": 3,
-								"pages": 54,
-								"elems": 78,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 33,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 67,
-										"int": {
-											"lower": 25,
-											"upper": 51
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "ehandler_02",
-								"level": "A",
-								"elem": "ehandler",
-								"websites": 12,
-								"pages": 251,
-								"elems": 1130,
-								"quartiles": [
-									{
-										"tot": 3,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 3,
-										"por": 25,
-										"int": {
-											"lower": 6,
-											"upper": 16
-										}
-									},
-									{
-										"tot": 4,
-										"por": 33,
-										"int": {
-											"lower": 20,
-											"upper": 86
-										}
-									},
-									{
-										"tot": 2,
-										"por": 17,
-										"int": {
-											"lower": 286,
-											"upper": 621
-										}
-									}
-								],
-								"elemGroup": "ehandler"
-							},
-							{
-								"key": "svg_02",
-								"level": "A",
-								"elem": "svg",
-								"websites": 1,
-								"pages": 18,
-								"elems": 202,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 202,
-											"upper": 202
-										}
-									}
-								]
-							},
-							{
-								"key": "landmark_14",
-								"level": "AA",
-								"elem": "all",
-								"websites": 2,
-								"pages": 47,
-								"elems": 47,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 3,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 44,
-											"upper": 44
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_08",
-								"level": "AA",
-								"elem": "all",
-								"websites": 3,
-								"pages": 66,
-								"elems": 66,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 33,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 2,
-										"por": 67,
-										"int": {
-											"lower": 21,
-											"upper": 44
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "img_01b",
-								"level": "A",
-								"elem": "img",
-								"websites": 14,
-								"pages": 269,
-								"elems": 637,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 43,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 1,
-										"por": 7,
-										"int": {
-											"lower": 12,
-											"upper": 12
-										}
-									},
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 14,
-											"upper": 63
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 92,
-											"upper": 209
-										}
-									}
-								],
-								"elemGroup": "image"
-							},
-							{
-								"key": "aria_06",
-								"level": "A",
-								"elem": "all",
-								"websites": 8,
-								"pages": 261,
-								"elems": 370,
-								"quartiles": [
-									{
-										"tot": 3,
-										"por": 38,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 1,
-										"por": 13,
-										"int": {
-											"lower": 14,
-											"upper": 14
-										}
-									},
-									{
-										"tot": 3,
-										"por": 38,
-										"int": {
-											"lower": 68,
-											"upper": 97
-										}
-									},
-									{
-										"tot": 1,
-										"por": 13,
-										"int": {
-											"lower": 104,
-											"upper": 104
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "color_02",
-								"level": "AA",
-								"elem": "all",
-								"websites": 20,
-								"pages": 601,
-								"elems": 3705,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 3,
-											"upper": 16
-										}
-									},
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 23,
-											"upper": 45
-										}
-									},
-									{
-										"tot": 6,
-										"por": 30,
-										"int": {
-											"lower": 51,
-											"upper": 254
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 267,
-											"upper": 1516
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "br_01",
-								"level": "A",
-								"elem": "all",
-								"websites": 14,
-								"pages": 49,
-								"elems": 126,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 36,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 2,
-										"por": 14,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 3,
-											"upper": 13
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 18,
-											"upper": 37
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "a_11",
-								"level": "A",
-								"elem": "a",
-								"websites": 20,
-								"pages": 288,
-								"elems": 2937,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 6,
-										"por": 30,
-										"int": {
-											"lower": 5,
-											"upper": 8
-										}
-									},
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 10,
-											"upper": 65
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 138,
-											"upper": 1045
-										}
-									}
-								],
-								"elemGroup": "link"
-							},
-							{
-								"key": "ehandler_04",
-								"level": "A",
-								"elem": "ehandler",
-								"websites": 7,
-								"pages": 10,
-								"elems": 60,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 3,
-										"por": 43,
-										"int": {
-											"lower": 2,
-											"upper": 6
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 20,
-											"upper": 20
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 27,
-											"upper": 27
-										}
-									}
-								],
-								"elemGroup": "ehandler"
-							},
-							{
-								"key": "a_06",
-								"level": "A",
-								"elem": "a",
-								"websites": 6,
-								"pages": 106,
-								"elems": 145,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 2,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 6,
-											"upper": 6
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 20,
-											"upper": 20
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 108,
-											"upper": 108
-										}
-									}
-								],
-								"elemGroup": "link"
-							},
-							{
-								"key": "heading_02",
-								"level": "A",
-								"elem": "hx",
-								"websites": 15,
-								"pages": 165,
-								"elems": 301,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 47,
-										"int": {
-											"lower": 1,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 2,
-										"por": 13,
-										"int": {
-											"lower": 4,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 6,
-											"upper": 16
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 23,
-											"upper": 185
-										}
-									}
-								],
-								"elemGroup": "heading"
-							},
-							{
-								"key": "list_03",
-								"level": "AA",
-								"elem": "li",
-								"websites": 11,
-								"pages": 376,
-								"elems": 615,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 36,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 3,
-										"por": 27,
-										"int": {
-											"lower": 4,
-											"upper": 49
-										}
-									},
-									{
-										"tot": 2,
-										"por": 18,
-										"int": {
-											"lower": 96,
-											"upper": 99
-										}
-									},
-									{
-										"tot": 2,
-										"por": 18,
-										"int": {
-											"lower": 114,
-											"upper": 200
-										}
-									}
-								]
-							},
-							{
-								"key": "input_02",
-								"level": "A",
-								"elem": "label",
-								"websites": 13,
-								"pages": 175,
-								"elems": 233,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 46,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 15,
-										"int": {
-											"lower": 3,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 3,
-										"por": 23,
-										"int": {
-											"lower": 6,
-											"upper": 22
-										}
-									},
-									{
-										"tot": 2,
-										"por": 15,
-										"int": {
-											"lower": 83,
-											"upper": 96
-										}
-									}
-								],
-								"elemGroup": "form"
-							},
-							{
-								"key": "a_05",
-								"level": "A",
-								"elem": "a",
-								"websites": 20,
-								"pages": 502,
-								"elems": 24929,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 11
-										}
-									},
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 12,
-											"upper": 40
-										}
-									},
-									{
-										"tot": 6,
-										"por": 30,
-										"int": {
-											"lower": 66,
-											"upper": 319
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 383,
-											"upper": 17883
-										}
-									}
-								],
-								"elemGroup": "link"
-							},
-							{
-								"key": "element_03",
-								"level": "A",
-								"elem": "all",
-								"websites": 6,
-								"pages": 69,
-								"elems": 88,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 6,
-											"upper": 10
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 64,
-											"upper": 64
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "element_05",
-								"level": "A",
-								"elem": "all",
-								"websites": 3,
-								"pages": 3,
-								"elems": 4,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 67,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 1,
-										"por": 33,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "element_09",
-								"level": "A",
-								"elem": "all",
-								"websites": 2,
-								"pages": 46,
-								"elems": 50,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 45,
-											"upper": 45
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "iframe_05",
-								"level": "A",
-								"elem": "all",
-								"websites": 5,
-								"pages": 8,
-								"elems": 11,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 80,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 4,
-											"upper": 4
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "a_03",
-								"level": "A",
-								"elem": "a",
-								"websites": 15,
-								"pages": 140,
-								"elems": 1169,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 4,
-										"por": 27,
-										"int": {
-											"lower": 5,
-											"upper": 6
-										}
-									},
-									{
-										"tot": 2,
-										"por": 13,
-										"int": {
-											"lower": 7,
-											"upper": 10
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 18,
-											"upper": 1008
-										}
-									}
-								],
-								"elemGroup": "link"
-							},
-							{
-								"key": "label_02",
-								"level": "A",
-								"elem": "all",
-								"websites": 14,
-								"pages": 242,
-								"elems": 461,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 36,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 14,
-										"int": {
-											"lower": 7,
-											"upper": 8
-										}
-									},
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 9,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 56,
-											"upper": 234
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_06",
-								"level": "AA",
-								"elem": "all",
-								"websites": 6,
-								"pages": 207,
-								"elems": 216,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 2,
-											"upper": 17
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 25,
-											"upper": 25
-										}
-									},
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 34,
-											"upper": 42
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 96,
-											"upper": 96
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "layout_01b",
-								"level": "A",
-								"elem": "all",
-								"websites": 14,
-								"pages": 184,
-								"elems": 3872,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 6,
-											"upper": 23
-										}
-									},
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 24,
-											"upper": 89
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 112,
-											"upper": 2966
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "hx_01a",
-								"level": "A",
-								"elem": "all",
-								"websites": 7,
-								"pages": 161,
-								"elems": 162,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 2,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 3,
-										"por": 43,
-										"int": {
-											"lower": 8,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 41,
-											"upper": 41
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 65,
-											"upper": 65
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "listitem_02",
-								"level": "AA",
-								"elem": "li",
-								"websites": 3,
-								"pages": 59,
-								"elems": 184,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 33,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 67,
-										"int": {
-											"lower": 4,
-											"upper": 178
-										}
-									}
-								]
-							},
-							{
-								"key": "iframe_01",
-								"level": "A",
-								"elem": "iframe",
-								"websites": 12,
-								"pages": 106,
-								"elems": 185,
-								"quartiles": [
-									{
-										"tot": 3,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 3,
-										"por": 25,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 4,
-										"por": 33,
-										"int": {
-											"lower": 3,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 2,
-										"por": 17,
-										"int": {
-											"lower": 78,
-											"upper": 83
-										}
-									}
-								],
-								"elemGroup": "frame"
-							},
-							{
-								"key": "table_05a",
-								"level": "A",
-								"elem": "all",
-								"websites": 15,
-								"pages": 213,
-								"elems": 446,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 27,
-										"int": {
-											"lower": 1,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 6,
-										"por": 40,
-										"int": {
-											"lower": 7,
-											"upper": 14
-										}
-									},
-									{
-										"tot": 2,
-										"por": 13,
-										"int": {
-											"lower": 20,
-											"upper": 32
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 36,
-											"upper": 220
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "title_03",
-								"level": "A",
-								"elem": "all",
-								"websites": 3,
-								"pages": 9,
-								"elems": 9,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 67,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 1,
-										"por": 33,
-										"int": {
-											"lower": 7,
-											"upper": 7
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "table_06",
-								"level": "A",
-								"elem": "tableComplex",
-								"websites": 6,
-								"pages": 10,
-								"elems": 18,
-								"quartiles": [
-									{
-										"tot": 3,
-										"por": 50,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 2,
-										"por": 33,
-										"int": {
-											"lower": 4,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 1,
-										"por": 17,
-										"int": {
-											"lower": 7,
-											"upper": 7
-										}
-									}
-								],
-								"elemGroup": "table"
-							},
-							{
-								"key": "img_03",
-								"level": "A",
-								"elem": "img",
-								"websites": 4,
-								"pages": 33,
-								"elems": 183,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 25,
-										"int": {
-											"lower": 4,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 1,
-										"por": 25,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 2,
-										"por": 50,
-										"int": {
-											"lower": 40,
-											"upper": 134
-										}
-									}
-								],
-								"elemGroup": "image"
-							},
-							{
-								"key": "form_01b",
-								"level": "A",
-								"elem": "form",
-								"websites": 7,
-								"pages": 118,
-								"elems": 120,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 3,
-										"por": 43,
-										"int": {
-											"lower": 2,
-											"upper": 10
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 17,
-											"upper": 17
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 87,
-											"upper": 87
-										}
-									}
-								],
-								"elemGroup": "form"
-							},
-							{
-								"key": "table_08",
-								"level": "A",
-								"elem": "tableData",
-								"websites": 1,
-								"pages": 1,
-								"elems": 5,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									}
-								],
-								"elemGroup": "table"
-							},
-							{
-								"key": "table_04",
-								"level": "A",
-								"elem": "table",
-								"websites": 5,
-								"pages": 9,
-								"elems": 23,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 2,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 7,
-											"upper": 7
-										}
-									}
-								],
-								"elemGroup": "table"
-							},
-							{
-								"key": "role_02",
-								"level": "AA",
-								"elem": "all",
-								"websites": 2,
-								"pages": 8,
-								"elems": 18,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 4,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 14,
-											"upper": 14
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "a_04",
-								"level": "AA",
-								"elem": "all",
-								"websites": 5,
-								"pages": 59,
-								"elems": 59,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 7,
-											"upper": 16
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 30,
-											"upper": 30
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "a_02a",
-								"level": "A",
-								"elem": "a",
-								"websites": 5,
-								"pages": 59,
-								"elems": 59,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 7,
-											"upper": 16
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 30,
-											"upper": 30
-										}
-									}
-								],
-								"elemGroup": "link"
-							},
-							{
-								"key": "lang_03",
-								"level": "A",
-								"elem": "all",
-								"websites": 7,
-								"pages": 62,
-								"elems": 62,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 3,
-										"por": 43,
-										"int": {
-											"lower": 2,
-											"upper": 7
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 17,
-											"upper": 17
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 31,
-											"upper": 31
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "area_01b",
-								"level": "A",
-								"elem": "area",
-								"websites": 2,
-								"pages": 3,
-								"elems": 6,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									}
-								],
-								"elemGroup": "area"
-							},
-							{
-								"key": "list_07",
-								"level": "AAA",
-								"elem": "dl",
-								"websites": 2,
-								"pages": 4,
-								"elems": 4,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 3,
-											"upper": 3
-										}
-									}
-								]
-							},
-							{
-								"key": "landmark_12",
-								"level": "AA",
-								"elem": "all",
-								"websites": 2,
-								"pages": 156,
-								"elems": 156,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 17,
-											"upper": 17
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 139,
-											"upper": 139
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "abbr_01",
-								"level": "AAA",
-								"elem": "all",
-								"websites": 1,
-								"pages": 12,
-								"elems": 16,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 16,
-											"upper": 16
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "justif_txt_01",
-								"level": "AAA",
-								"elem": "all",
-								"websites": 1,
-								"pages": 1,
-								"elems": 24,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 24,
-											"upper": 24
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "aria_04",
-								"level": "A",
-								"elem": "all",
-								"websites": 1,
-								"pages": 1,
-								"elems": 6,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 6,
-											"upper": 6
-										}
-									}
-								],
-								"elemGroup": "other"
-							}
-						]
-					},
-					"bestPracticesDistribution": {
-						"success": {
-							"title_06": {
-								"n_occurrences": 1414,
-								"n_pages": 1414,
-								"n_websites": 26
-							},
-							"a_10": {
-								"n_occurrences": 62494,
-								"n_pages": 1076,
-								"n_websites": 23
-							},
-							"element_02": {
-								"n_occurrences": 37473,
-								"n_pages": 943,
-								"n_websites": 20
-							},
-							"meta_05": {
-								"n_occurrences": 1038,
-								"n_pages": 1006,
-								"n_websites": 23
-							},
-							"svg_01": {
-								"n_occurrences": 133,
-								"n_pages": 51,
-								"n_websites": 1
-							},
-							"element_06": {
-								"n_occurrences": 358,
-								"n_pages": 128,
-								"n_websites": 12
-							},
-							"aria_05": {
-								"n_occurrences": 5786,
-								"n_pages": 591,
-								"n_websites": 19
-							},
-							"aria_07": {
-								"n_occurrences": 82547,
-								"n_pages": 1151,
-								"n_websites": 22
-							},
-							"element_10": {
-								"n_occurrences": 4102,
-								"n_pages": 884,
-								"n_websites": 22
-							},
-							"aria_03": {
-								"n_occurrences": 7530,
-								"n_pages": 851,
-								"n_websites": 21
-							},
-							"input_02b": {
-								"n_occurrences": 622,
-								"n_pages": 622,
-								"n_websites": 20
-							},
-							"role_01": {
-								"n_occurrences": 5581,
-								"n_pages": 881,
-								"n_websites": 22
-							},
-							"img_01a": {
-								"n_occurrences": 1094,
-								"n_pages": 1094,
-								"n_websites": 25
-							},
-							"heading_01": {
-								"n_occurrences": 7057,
-								"n_pages": 1096,
-								"n_websites": 24
-							},
-							"element_04": {
-								"n_occurrences": 10094,
-								"n_pages": 585,
-								"n_websites": 24
-							},
-							"element_08": {
-								"n_occurrences": 72313,
-								"n_pages": 1320,
-								"n_websites": 26
-							},
-							"form_01a": {
-								"n_occurrences": 915,
-								"n_pages": 915,
-								"n_websites": 21
-							},
-							"layout_01a": {
-								"n_occurrences": 1239,
-								"n_pages": 1239,
-								"n_websites": 26
-							},
-							"landmark_11": {
-								"n_occurrences": 1958,
-								"n_pages": 1267,
-								"n_websites": 26
-							},
-							"landmark_13": {
-								"n_occurrences": 1977,
-								"n_pages": 1376,
-								"n_websites": 26
-							},
-							"listitem_01": {
-								"n_occurrences": 156936,
-								"n_pages": 1258,
-								"n_websites": 26
-							},
-							"list_02": {
-								"n_occurrences": 22106,
-								"n_pages": 942,
-								"n_websites": 24
-							},
-							"landmark_05": {
-								"n_occurrences": 882,
-								"n_pages": 768,
-								"n_websites": 19
-							},
-							"landmark_07": {
-								"n_occurrences": 489,
-								"n_pages": 486,
-								"n_websites": 14
-							},
-							"aria_02": {
-								"n_occurrences": 165,
-								"n_pages": 146,
-								"n_websites": 8
-							},
-							"aria_01": {
-								"n_occurrences": 651,
-								"n_pages": 145,
-								"n_websites": 8
-							},
-							"table_07": {
-								"n_occurrences": 301,
-								"n_pages": 45,
-								"n_websites": 13
-							},
-							"textC_01": {
-								"n_occurrences": 7438,
-								"n_pages": 348,
-								"n_websites": 15
-							},
-							"a_12": {
-								"n_occurrences": 643,
-								"n_pages": 303,
-								"n_websites": 15
-							},
-							"list_04": {
-								"n_occurrences": 341,
-								"n_pages": 87,
-								"n_websites": 7
-							},
-							"list_06": {
-								"n_occurrences": 162,
-								"n_pages": 83,
-								"n_websites": 5
-							},
-							"w3c_validator_01a": {
-								"n_occurrences": 198,
-								"n_pages": 198,
-								"n_websites": 19
-							},
-							"button_01": {
-								"n_occurrences": 2928,
-								"n_pages": 799,
-								"n_websites": 23
-							},
-							"landmark_09": {
-								"n_occurrences": 1696,
-								"n_pages": 1288,
-								"n_websites": 25
-							},
-							"id_01": {
-								"n_occurrences": 92214,
-								"n_pages": 1031,
-								"n_websites": 25
-							},
-							"letter_01": {
-								"n_occurrences": 419,
-								"n_pages": 89,
-								"n_websites": 7
-							},
-							"label_01": {
-								"n_occurrences": 20,
-								"n_pages": 10,
-								"n_websites": 5
-							},
-							"landmark_03": {
-								"n_occurrences": 294,
-								"n_pages": 264,
-								"n_websites": 7
-							},
-							"iframe_04": {
-								"n_occurrences": 60,
-								"n_pages": 47,
-								"n_websites": 2
-							},
-							"menuItem_01": {
-								"n_occurrences": 567,
-								"n_pages": 126,
-								"n_websites": 5
-							},
-							"meta_03": {
-								"n_occurrences": 223,
-								"n_pages": 223,
-								"n_websites": 5
-							},
-							"landmark_01": {
-								"n_occurrences": 299,
-								"n_pages": 299,
-								"n_websites": 5
-							},
-							"inp_img_01a": {
-								"n_occurrences": 28,
-								"n_pages": 28,
-								"n_websites": 3
-							},
-							"ehandler_03": {
-								"n_occurrences": 35,
-								"n_pages": 3,
-								"n_websites": 1
-							},
-							"word_01": {
-								"n_occurrences": 50,
-								"n_pages": 11,
-								"n_websites": 1
-							}
-						},
-						"graphData": [
-							{
-								"key": "title_06",
-								"elem": "all",
-								"n_pages": 1414,
-								"n_websites": 26,
-								"result": "passed"
-							},
-							{
-								"key": "landmark_13",
-								"elem": "all",
-								"n_pages": 1376,
-								"n_websites": 26,
-								"result": "passed"
-							},
-							{
-								"key": "element_08",
-								"elem": "all",
-								"n_pages": 1320,
-								"n_websites": 26,
-								"result": "passed"
-							},
-							{
-								"key": "landmark_09",
-								"elem": "all",
-								"n_pages": 1288,
-								"n_websites": 25,
-								"result": "passed"
-							},
-							{
-								"key": "landmark_11",
-								"elem": "all",
-								"n_pages": 1267,
-								"n_websites": 26,
-								"result": "passed"
-							},
-							{
-								"key": "listitem_01",
-								"elem": "li",
-								"n_pages": 1258,
-								"n_websites": 26,
-								"result": "passed"
-							},
-							{
-								"key": "layout_01a",
-								"elem": "all",
-								"n_pages": 1239,
-								"n_websites": 26,
-								"result": "passed"
-							},
-							{
-								"key": "aria_07",
-								"elem": "all",
-								"n_pages": 1151,
-								"n_websites": 22,
-								"result": "passed"
-							},
-							{
-								"key": "heading_01",
-								"elem": "hx",
-								"n_pages": 1096,
-								"n_websites": 24,
-								"result": "passed"
-							},
-							{
-								"key": "img_01a",
-								"elem": "img",
-								"n_pages": 1094,
-								"n_websites": 25,
-								"result": "passed"
-							}
-						],
-						"showTableData": [
-							{
-								"key": "title_06",
-								"level": "A",
-								"elem": "all",
-								"websites": 26,
-								"pages": 1414,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 1,
-											"upper": 28
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 30,
-											"upper": 42
-										}
-									},
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 51,
-											"upper": 82
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 87,
-											"upper": 154
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "a_10",
-								"level": "A",
-								"elem": "all",
-								"websites": 23,
-								"pages": 1076,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 26,
-										"int": {
-											"lower": 14,
-											"upper": 847
-										}
-									},
-									{
-										"tot": 7,
-										"por": 30,
-										"int": {
-											"lower": 874,
-											"upper": 2255
-										}
-									},
-									{
-										"tot": 5,
-										"por": 22,
-										"int": {
-											"lower": 2600,
-											"upper": 3814
-										}
-									},
-									{
-										"tot": 5,
-										"por": 22,
-										"int": {
-											"lower": 4362,
-											"upper": 13048
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "element_02",
-								"level": "A",
-								"elem": "all",
-								"websites": 20,
-								"pages": 943,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 19
-										}
-									},
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 39,
-											"upper": 142
-										}
-									},
-									{
-										"tot": 6,
-										"por": 30,
-										"int": {
-											"lower": 156,
-											"upper": 998
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 4295,
-											"upper": 14582
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "meta_05",
-								"level": "AA",
-								"elem": "all",
-								"websites": 23,
-								"pages": 1006,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 26,
-										"int": {
-											"lower": 1,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 7,
-										"por": 30,
-										"int": {
-											"lower": 11,
-											"upper": 42
-										}
-									},
-									{
-										"tot": 5,
-										"por": 22,
-										"int": {
-											"lower": 59,
-											"upper": 69
-										}
-									},
-									{
-										"tot": 5,
-										"por": 22,
-										"int": {
-											"lower": 86,
-											"upper": 151
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "svg_01",
-								"level": "A",
-								"elem": "svg",
-								"websites": 1,
-								"pages": 51,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 133,
-											"upper": 133
-										}
-									}
-								]
-							},
-							{
-								"key": "element_06",
-								"level": "AA",
-								"elem": "all",
-								"websites": 12,
-								"pages": 128,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 33,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 2,
-										"por": 17,
-										"int": {
-											"lower": 9,
-											"upper": 13
-										}
-									},
-									{
-										"tot": 4,
-										"por": 33,
-										"int": {
-											"lower": 14,
-											"upper": 61
-										}
-									},
-									{
-										"tot": 2,
-										"por": 17,
-										"int": {
-											"lower": 79,
-											"upper": 101
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "aria_05",
-								"level": "A",
-								"elem": "all",
-								"websites": 19,
-								"pages": 591,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 26,
-										"int": {
-											"lower": 4,
-											"upper": 19
-										}
-									},
-									{
-										"tot": 6,
-										"por": 32,
-										"int": {
-											"lower": 57,
-											"upper": 229
-										}
-									},
-									{
-										"tot": 4,
-										"por": 21,
-										"int": {
-											"lower": 270,
-											"upper": 463
-										}
-									},
-									{
-										"tot": 4,
-										"por": 21,
-										"int": {
-											"lower": 533,
-											"upper": 1322
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "aria_07",
-								"level": "A",
-								"elem": "all",
-								"websites": 22,
-								"pages": 1151,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 27,
-										"int": {
-											"lower": 2,
-											"upper": 184
-										}
-									},
-									{
-										"tot": 5,
-										"por": 23,
-										"int": {
-											"lower": 187,
-											"upper": 557
-										}
-									},
-									{
-										"tot": 6,
-										"por": 27,
-										"int": {
-											"lower": 590,
-											"upper": 1010
-										}
-									},
-									{
-										"tot": 5,
-										"por": 23,
-										"int": {
-											"lower": 1096,
-											"upper": 35371
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "element_10",
-								"level": "A",
-								"elem": "all",
-								"websites": 22,
-								"pages": 884,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 27,
-										"int": {
-											"lower": 1,
-											"upper": 14
-										}
-									},
-									{
-										"tot": 5,
-										"por": 23,
-										"int": {
-											"lower": 26,
-											"upper": 125
-										}
-									},
-									{
-										"tot": 6,
-										"por": 27,
-										"int": {
-											"lower": 146,
-											"upper": 227
-										}
-									},
-									{
-										"tot": 5,
-										"por": 23,
-										"int": {
-											"lower": 232,
-											"upper": 799
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "aria_03",
-								"level": "A",
-								"elem": "all",
-								"websites": 21,
-								"pages": 851,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 29,
-										"int": {
-											"lower": 4,
-											"upper": 57
-										}
-									},
-									{
-										"tot": 6,
-										"por": 29,
-										"int": {
-											"lower": 71,
-											"upper": 252
-										}
-									},
-									{
-										"tot": 5,
-										"por": 24,
-										"int": {
-											"lower": 271,
-											"upper": 533
-										}
-									},
-									{
-										"tot": 4,
-										"por": 19,
-										"int": {
-											"lower": 562,
-											"upper": 1828
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "input_02b",
-								"level": "A",
-								"elem": "all",
-								"websites": 20,
-								"pages": 622,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 2,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 5,
-										"por": 25,
-										"int": {
-											"lower": 7,
-											"upper": 18
-										}
-									},
-									{
-										"tot": 6,
-										"por": 30,
-										"int": {
-											"lower": 30,
-											"upper": 66
-										}
-									},
-									{
-										"tot": 4,
-										"por": 20,
-										"int": {
-											"lower": 68,
-											"upper": 87
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "role_01",
-								"level": "AA",
-								"elem": "all",
-								"websites": 22,
-								"pages": 881,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 27,
-										"int": {
-											"lower": 3,
-											"upper": 26
-										}
-									},
-									{
-										"tot": 5,
-										"por": 23,
-										"int": {
-											"lower": 38,
-											"upper": 134
-										}
-									},
-									{
-										"tot": 6,
-										"por": 27,
-										"int": {
-											"lower": 169,
-											"upper": 340
-										}
-									},
-									{
-										"tot": 5,
-										"por": 23,
-										"int": {
-											"lower": 342,
-											"upper": 1330
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "img_01a",
-								"level": "A",
-								"elem": "img",
-								"websites": 25,
-								"pages": 1094,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 28,
-										"int": {
-											"lower": 1,
-											"upper": 19
-										}
-									},
-									{
-										"tot": 7,
-										"por": 28,
-										"int": {
-											"lower": 23,
-											"upper": 37
-										}
-									},
-									{
-										"tot": 6,
-										"por": 24,
-										"int": {
-											"lower": 41,
-											"upper": 60
-										}
-									},
-									{
-										"tot": 5,
-										"por": 20,
-										"int": {
-											"lower": 64,
-											"upper": 151
-										}
-									}
-								],
-								"elemGroup": "image"
-							},
-							{
-								"key": "heading_01",
-								"level": "A",
-								"elem": "hx",
-								"websites": 24,
-								"pages": 1096,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 25,
-										"int": {
-											"lower": 6,
-											"upper": 57
-										}
-									},
-									{
-										"tot": 6,
-										"por": 25,
-										"int": {
-											"lower": 64,
-											"upper": 128
-										}
-									},
-									{
-										"tot": 7,
-										"por": 29,
-										"int": {
-											"lower": 145,
-											"upper": 488
-										}
-									},
-									{
-										"tot": 5,
-										"por": 21,
-										"int": {
-											"lower": 684,
-											"upper": 1167
-										}
-									}
-								],
-								"elemGroup": "heading"
-							},
-							{
-								"key": "element_04",
-								"level": "A",
-								"elem": "all",
-								"websites": 24,
-								"pages": 585,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 10
-										}
-									},
-									{
-										"tot": 6,
-										"por": 25,
-										"int": {
-											"lower": 13,
-											"upper": 48
-										}
-									},
-									{
-										"tot": 7,
-										"por": 29,
-										"int": {
-											"lower": 62,
-											"upper": 387
-										}
-									},
-									{
-										"tot": 5,
-										"por": 21,
-										"int": {
-											"lower": 429,
-											"upper": 6264
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "element_08",
-								"level": "A",
-								"elem": "all",
-								"websites": 26,
-								"pages": 1320,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 1,
-											"upper": 231
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 251,
-											"upper": 1210
-										}
-									},
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 1255,
-											"upper": 2160
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 2693,
-											"upper": 33166
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "form_01a",
-								"level": "A",
-								"elem": "form",
-								"websites": 21,
-								"pages": 915,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 15
-										}
-									},
-									{
-										"tot": 6,
-										"por": 29,
-										"int": {
-											"lower": 24,
-											"upper": 39
-										}
-									},
-									{
-										"tot": 5,
-										"por": 24,
-										"int": {
-											"lower": 42,
-											"upper": 69
-										}
-									},
-									{
-										"tot": 4,
-										"por": 19,
-										"int": {
-											"lower": 86,
-											"upper": 114
-										}
-									}
-								],
-								"elemGroup": "form"
-							},
-							{
-								"key": "layout_01a",
-								"level": "A",
-								"elem": "all",
-								"websites": 26,
-								"pages": 1239,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 1,
-											"upper": 23
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 25,
-											"upper": 40
-										}
-									},
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 41,
-											"upper": 66
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 69,
-											"upper": 154
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_11",
-								"level": "AA",
-								"elem": "all",
-								"websites": 26,
-								"pages": 1267,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 8,
-										"por": 31,
-										"int": {
-											"lower": 1,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 5,
-										"por": 19,
-										"int": {
-											"lower": 37,
-											"upper": 49
-										}
-									},
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 53,
-											"upper": 98
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 106,
-											"upper": 246
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_13",
-								"level": "AA",
-								"elem": "all",
-								"websites": 26,
-								"pages": 1376,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 1,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 37,
-											"upper": 53
-										}
-									},
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 59,
-											"upper": 98
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 106,
-											"upper": 246
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "listitem_01",
-								"level": "AA",
-								"elem": "li",
-								"websites": 26,
-								"pages": 1258,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 5,
-											"upper": 729
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 771,
-											"upper": 3027
-										}
-									},
-									{
-										"tot": 7,
-										"por": 27,
-										"int": {
-											"lower": 3659,
-											"upper": 8402
-										}
-									},
-									{
-										"tot": 6,
-										"por": 23,
-										"int": {
-											"lower": 9634,
-											"upper": 33388
-										}
-									}
-								]
-							},
-							{
-								"key": "list_02",
-								"level": "AA",
-								"elem": "li",
-								"websites": 24,
-								"pages": 942,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 32
-										}
-									},
-									{
-										"tot": 6,
-										"por": 25,
-										"int": {
-											"lower": 41,
-											"upper": 360
-										}
-									},
-									{
-										"tot": 7,
-										"por": 29,
-										"int": {
-											"lower": 463,
-											"upper": 1316
-										}
-									},
-									{
-										"tot": 5,
-										"por": 21,
-										"int": {
-											"lower": 1402,
-											"upper": 6732
-										}
-									}
-								]
-							},
-							{
-								"key": "landmark_05",
-								"level": "AA",
-								"elem": "all",
-								"websites": 19,
-								"pages": 768,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 26,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 6,
-										"por": 32,
-										"int": {
-											"lower": 7,
-											"upper": 37
-										}
-									},
-									{
-										"tot": 4,
-										"por": 21,
-										"int": {
-											"lower": 59,
-											"upper": 69
-										}
-									},
-									{
-										"tot": 4,
-										"por": 21,
-										"int": {
-											"lower": 82,
-											"upper": 242
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_07",
-								"level": "AA",
-								"elem": "all",
-								"websites": 14,
-								"pages": 486,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 24,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 4,
-										"por": 29,
-										"int": {
-											"lower": 37,
-											"upper": 59
-										}
-									},
-									{
-										"tot": 3,
-										"por": 21,
-										"int": {
-											"lower": 65,
-											"upper": 86
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "aria_02",
-								"level": "A",
-								"elem": "all",
-								"websites": 8,
-								"pages": 146,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 25,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 25,
-										"int": {
-											"lower": 4,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 3,
-										"por": 38,
-										"int": {
-											"lower": 16,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 1,
-										"por": 13,
-										"int": {
-											"lower": 86,
-											"upper": 86
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "aria_01",
-								"level": "A",
-								"elem": "all",
-								"websites": 8,
-								"pages": 145,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 25,
-										"int": {
-											"lower": 5,
-											"upper": 5
-										}
-									},
-									{
-										"tot": 2,
-										"por": 25,
-										"int": {
-											"lower": 8,
-											"upper": 8
-										}
-									},
-									{
-										"tot": 3,
-										"por": 38,
-										"int": {
-											"lower": 22,
-											"upper": 120
-										}
-									},
-									{
-										"tot": 1,
-										"por": 13,
-										"int": {
-											"lower": 430,
-											"upper": 430
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "table_07",
-								"level": "A",
-								"elem": "all",
-								"websites": 13,
-								"pages": 45,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 31,
-										"int": {
-											"lower": 2,
-											"upper": 4
-										}
-									},
-									{
-										"tot": 4,
-										"por": 31,
-										"int": {
-											"lower": 5,
-											"upper": 10
-										}
-									},
-									{
-										"tot": 3,
-										"por": 23,
-										"int": {
-											"lower": 14,
-											"upper": 24
-										}
-									},
-									{
-										"tot": 2,
-										"por": 15,
-										"int": {
-											"lower": 27,
-											"upper": 180
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "textC_01",
-								"level": "AAA",
-								"elem": "all",
-								"websites": 15,
-								"pages": 348,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 33,
-										"int": {
-											"lower": 2,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 4,
-										"por": 27,
-										"int": {
-											"lower": 4,
-											"upper": 31
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 87,
-											"upper": 189
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 340,
-											"upper": 5970
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "a_12",
-								"level": "A",
-								"elem": "all",
-								"websites": 15,
-								"pages": 303,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 27,
-										"int": {
-											"lower": 2,
-											"upper": 8
-										}
-									},
-									{
-										"tot": 5,
-										"por": 33,
-										"int": {
-											"lower": 9,
-											"upper": 12
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 17,
-											"upper": 34
-										}
-									},
-									{
-										"tot": 3,
-										"por": 20,
-										"int": {
-											"lower": 92,
-											"upper": 298
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "list_04",
-								"level": "AAA",
-								"elem": "dd,dt",
-								"websites": 7,
-								"pages": 87,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 2,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 3,
-										"por": 43,
-										"int": {
-											"lower": 3,
-											"upper": 6
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 8,
-											"upper": 8
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 316,
-											"upper": 316
-										}
-									}
-								]
-							},
-							{
-								"key": "list_06",
-								"level": "AAA",
-								"elem": "dl",
-								"websites": 5,
-								"pages": 83,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 4,
-										"por": 80,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 158,
-											"upper": 158
-										}
-									}
-								]
-							},
-							{
-								"key": "w3c_validator_01a",
-								"level": "A",
-								"elem": "w3cValidator",
-								"websites": 19,
-								"pages": 198,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 5,
-										"por": 26,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 6,
-										"por": 32,
-										"int": {
-											"lower": 2,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 4,
-										"por": 21,
-										"int": {
-											"lower": 8,
-											"upper": 16
-										}
-									},
-									{
-										"tot": 4,
-										"por": 21,
-										"int": {
-											"lower": 22,
-											"upper": 41
-										}
-									}
-								],
-								"elemGroup": "validator"
-							},
-							{
-								"key": "button_01",
-								"level": "A",
-								"elem": "button",
-								"websites": 23,
-								"pages": 799,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 6,
-										"por": 26,
-										"int": {
-											"lower": 2,
-											"upper": 10
-										}
-									},
-									{
-										"tot": 7,
-										"por": 30,
-										"int": {
-											"lower": 14,
-											"upper": 90
-										}
-									},
-									{
-										"tot": 5,
-										"por": 22,
-										"int": {
-											"lower": 120,
-											"upper": 281
-										}
-									},
-									{
-										"tot": 5,
-										"por": 22,
-										"int": {
-											"lower": 285,
-											"upper": 366
-										}
-									}
-								]
-							},
-							{
-								"key": "landmark_09",
-								"level": "AA",
-								"elem": "all",
-								"websites": 25,
-								"pages": 1288,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 28,
-										"int": {
-											"lower": 1,
-											"upper": 30
-										}
-									},
-									{
-										"tot": 7,
-										"por": 28,
-										"int": {
-											"lower": 37,
-											"upper": 59
-										}
-									},
-									{
-										"tot": 6,
-										"por": 24,
-										"int": {
-											"lower": 67,
-											"upper": 106
-										}
-									},
-									{
-										"tot": 5,
-										"por": 20,
-										"int": {
-											"lower": 114,
-											"upper": 181
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "id_01",
-								"level": "A",
-								"elem": "id",
-								"websites": 25,
-								"pages": 1031,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 7,
-										"por": 28,
-										"int": {
-											"lower": 1,
-											"upper": 1020
-										}
-									},
-									{
-										"tot": 7,
-										"por": 28,
-										"int": {
-											"lower": 1030,
-											"upper": 2890
-										}
-									},
-									{
-										"tot": 6,
-										"por": 24,
-										"int": {
-											"lower": 2979,
-											"upper": 7256
-										}
-									},
-									{
-										"tot": 5,
-										"por": 20,
-										"int": {
-											"lower": 7678,
-											"upper": 14051
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "letter_01",
-								"level": "AA",
-								"elem": "all",
-								"websites": 7,
-								"pages": 89,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 6
-										}
-									},
-									{
-										"tot": 4,
-										"por": 57,
-										"int": {
-											"lower": 8,
-											"upper": 50
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 295,
-											"upper": 295
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "label_01",
-								"level": "A",
-								"elem": "all",
-								"websites": 5,
-								"pages": 10,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 2
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 4,
-											"upper": 6
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 7,
-											"upper": 7
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_03",
-								"level": "AA",
-								"elem": "all",
-								"websites": 7,
-								"pages": 264,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 29,
-										"int": {
-											"lower": 1,
-											"upper": 13
-										}
-									},
-									{
-										"tot": 3,
-										"por": 43,
-										"int": {
-											"lower": 23,
-											"upper": 59
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 71,
-											"upper": 71
-										}
-									},
-									{
-										"tot": 1,
-										"por": 14,
-										"int": {
-											"lower": 72,
-											"upper": 72
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "iframe_04",
-								"level": "A",
-								"elem": "all",
-								"websites": 2,
-								"pages": 47,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 26,
-											"upper": 26
-										}
-									},
-									{
-										"tot": 1,
-										"por": 50,
-										"int": {
-											"lower": 34,
-											"upper": 34
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "menuItem_01",
-								"level": "A",
-								"elem": "menuItem",
-								"websites": 5,
-								"pages": 126,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 2,
-											"upper": 7
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 8,
-											"upper": 120
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 430,
-											"upper": 430
-										}
-									}
-								]
-							},
-							{
-								"key": "meta_03",
-								"level": "AAA",
-								"elem": "all",
-								"websites": 5,
-								"pages": 223,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 3
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 30,
-											"upper": 93
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 96,
-											"upper": 96
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "landmark_01",
-								"level": "AA",
-								"elem": "all",
-								"websites": 5,
-								"pages": 299,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 1,
-											"upper": 34
-										}
-									},
-									{
-										"tot": 2,
-										"por": 40,
-										"int": {
-											"lower": 59,
-											"upper": 87
-										}
-									},
-									{
-										"tot": 1,
-										"por": 20,
-										"int": {
-											"lower": 118,
-											"upper": 118
-										}
-									}
-								],
-								"elemGroup": "other"
-							},
-							{
-								"key": "inp_img_01a",
-								"level": "A",
-								"elem": "inpImg",
-								"websites": 3,
-								"pages": 28,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 33,
-										"int": {
-											"lower": 1,
-											"upper": 1
-										}
-									},
-									{
-										"tot": 2,
-										"por": 67,
-										"int": {
-											"lower": 3,
-											"upper": 24
-										}
-									}
-								],
-								"elemGroup": "graphic"
-							},
-							{
-								"key": "ehandler_03",
-								"level": "A",
-								"elem": "ehandler",
-								"websites": 1,
-								"pages": 3,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 35,
-											"upper": 35
-										}
-									}
-								],
-								"elemGroup": "ehandler"
-							},
-							{
-								"key": "word_01",
-								"level": "AA",
-								"elem": "all",
-								"websites": 1,
-								"pages": 11,
-								"elems": -1,
-								"quartiles": [
-									{
-										"tot": 1,
-										"por": 100,
-										"int": {
-											"lower": 50,
-											"upper": 50
-										}
-									}
-								],
-								"elemGroup": "other"
-							}
-						]
-					},
 					"applicationsList": [
 						{
 							"id": 5,
 							"rank": 1,
 							"name": "Portal SNS",
 							"entity": "Serviços Partilhados do Ministério da Saúde, E.P.E.",
-							"declaration": null,
-							"stamp": null,
-							"score": 9.54666666666667,
-							"nPages": 30,
-							"A": 13,
-							"AA": 0,
-							"AAA": 0
+							"declaration": 1,
+							"stamp": 1,
+							"conformance": 66
 						},
 						{
 							"id": 8,
@@ -7322,11 +3051,7 @@
 							"entity": "Imprensa Nacional - Casa da Moeda",
 							"declaration": null,
 							"stamp": null,
-							"score": 9.32,
-							"nPages": 35,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 4,
@@ -7335,11 +3060,7 @@
 							"entity": "Secretaria-Geral do Ministério da Defesa Nacional",
 							"declaration": 2,
 							"stamp": 2,
-							"score": 9.263157894736839,
-							"nPages": 114,
-							"A": 4,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 11,
@@ -7348,11 +3069,7 @@
 							"entity": "Direção-Geral da Educação",
 							"declaration": null,
 							"stamp": null,
-							"score": 8.79491525423729,
-							"nPages": 59,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 9,
@@ -7361,11 +3078,7 @@
 							"entity": "Centro de Gestão da Rede Informática do Governo",
 							"declaration": null,
 							"stamp": null,
-							"score": 8.787804878048783,
-							"nPages": 82,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 10,
@@ -7374,11 +3087,7 @@
 							"entity": "Assembleia da República",
 							"declaration": null,
 							"stamp": null,
-							"score": 8.638144329896905,
-							"nPages": 97,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 3,
@@ -7387,11 +3096,7 @@
 							"entity": "Secretaria-Geral do Ministério da Justiça",
 							"declaration": null,
 							"stamp": null,
-							"score": 8.352380952380951,
-							"nPages": 42,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 7,
@@ -7400,24 +3105,16 @@
 							"entity": "Instituto do Emprego e Formação Profissional, I.P.",
 							"declaration": null,
 							"stamp": null,
-							"score": 7.797701149425285,
-							"nPages": 87,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"conformance": 66
 						},
 						{
 							"id": 2,
 							"rank": 9,
 							"name": "ePortugal",
 							"entity": "Agência para a Modernização Administrativa",
-							"declaration": 2,
-							"stamp": null,
-							"score": 7.565217391304346,
-							"nPages": 69,
-							"A": 0,
-							"AA": 0,
-							"AAA": 0
+							"declaration": 3,
+							"stamp": 3,
+							"conformance": 66
 						}
 					],
 					"nApplications": 9,
@@ -7559,65 +3256,71 @@
 							"id": 2,
 							"rank": 1,
 							"name": "ePortugal",
-							"conformance": 6.6
+							"conformance": 66
 						},
 						{
 							"id": 4,
 							"rank": 2,
 							"name": "Portal da Defesa Nacional",
-							"conformance": 6.6
+							"conformance": 66
 						},
 						{
 							"id": 5,
 							"rank": 3,
 							"name": "Portal SNS",
-							"conformance": 6.6
+							"conformance": 66
 						},
 						{
 							"id": 9,
 							"rank": 4,
 							"name": "Portal do Governo de Portugal",
-							"conformance": 6.6
+							"conformance": 66
 						},
 						{
 							"id": 8,
 							"rank": 5,
 							"name": "Diário da República Portuguesa",
-							"conformance": 6.6
+							"conformance": 66
 						}
 					],
 					"accessibilityDeclarationApplicationsList": [
 						{
 							"id": 2,
+							"line": 1,
 							"name": "ePortugal",
-							"declaration": 1
+							"declaration": 3
 						},
 						{
 							"id": 4,
+							"line": 2,
 							"name": "Portal da Defesa Nacional",
 							"declaration": 2
 						},
 						{
 							"id": 5,
+							"line": 3,
 							"name": "Portal SNS",
-							"declaration": 3
+							"declaration": 1
 						}
 					],
 					"usabilityAccessibilityStampApplicationsList": [
 						{
 							"id": 2,
+							"line": 1,
 							"name": "ePortugal",
-							"stamp": 1
+							"stamp": 3
 						},
 						{
 							"id": 4,
+							"line": 2,
 							"name": "Portal da Defesa Nacional",
 							"stamp": 2
 						},
 						{
 							"id": 5,
+							"line": 3,
 							"name": "Portal SNS",
-							"stamp": 3
+							"stamp": 1
 						}
 					],
 					"applications": {
@@ -7729,7 +3432,101 @@
 							"downloadUrl": "https://justica.gov.pt",
 							"latestRevision": "2023-10-16T14:08:13.000Z",
 							"ownerEntity": "Secretaria-Geral do Ministério da Justiça",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"4": {
 							"id": 4,
@@ -7737,7 +3534,101 @@
 							"downloadUrl": "https://www.defesa.gov.pt",
 							"latestRevision": "2023-10-16T13:36:23.000Z",
 							"ownerEntity": "Secretaria-Geral do Ministério da Defesa Nacional",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"5": {
 							"id": 5,
@@ -7745,7 +3636,101 @@
 							"downloadUrl": "https://www.sns.gov.pt",
 							"latestRevision": "2023-10-16T13:49:15.000Z",
 							"ownerEntity": "Serviços Partilhados do Ministério da Saúde, E.P.E.",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"7": {
 							"id": 7,
@@ -7753,7 +3738,101 @@
 							"downloadUrl": "https://www.iefp.pt",
 							"latestRevision": "2023-10-16T13:28:11.000Z",
 							"ownerEntity": "Instituto do Emprego e Formação Profissional, I.P.",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"8": {
 							"id": 8,
@@ -7761,7 +3840,101 @@
 							"downloadUrl": "https://dre.pt",
 							"latestRevision": "2023-10-16T13:36:23.000Z",
 							"ownerEntity": "Imprensa Nacional - Casa da Moeda",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"9": {
 							"id": 9,
@@ -7769,7 +3942,101 @@
 							"downloadUrl": "https://www.portugal.gov.pt",
 							"latestRevision": "2023-10-16T13:52:13.000Z",
 							"ownerEntity": "Centro de Gestão da Rede Informática do Governo",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"10": {
 							"id": 10,
@@ -7777,7 +4044,101 @@
 							"downloadUrl": "https://www.parlamento.pt",
 							"latestRevision": "2023-10-16T13:28:01.000Z",
 							"ownerEntity": "Assembleia da República",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						},
 						"11": {
 							"id": 11,
@@ -7785,7 +4146,101 @@
 							"downloadUrl": "https://www.dge.mec.pt",
 							"latestRevision": "2023-10-16T13:41:34.000Z",
 							"ownerEntity": "Direção-Geral da Educação",
-							"operatingSystem": "Android"
+							"operatingSystem": "Android",
+							"accessibilityDeclaration": {
+								"declaration": 1,
+								"state": "conformant",
+								"date": "2023-10-16T13:52:38.000Z"
+							},
+							"usabilityAccessibilityStamp": {
+								"stamp": 1,
+								"stampLevel": "gold",
+								"validityDate": "2025-10-16T14:08:13.000Z"
+							},
+							"conformance": 6.6,
+							"tenCriticalAspectsList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"successCriteriaList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"conformity": 1,
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"conformity": 1,
+									"nEvidences": 6
+								},
+								{
+									"rank": 3,
+									"name": "Forneça indicações para gestos e ações",
+									"conformity": 2,
+									"nEvidences": 105
+								},
+								{
+									"rank": 4,
+									"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+									"conformity": 3,
+									"nEvidences": "-"
+								},
+								{
+									"rank": 5,
+									"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+									"conformity": 3,
+									"nEvidences": "-"
+								}
+							],
+							"top3BestPracticesList": [
+								{
+									"rank": 1,
+									"name": "Crie designs para ecrãs de dimensão reduzida",
+									"nEvidences": 10
+								},
+								{
+									"rank": 2,
+									"name": "Crie gestos simples e disponibilize opções acessíveis",
+									"nEvidences": 6
+								}
+							],
+							"top3WorstPracticesList": [	
+								{
+									"rank": 1,
+									"name": "Forneça indicações para gestos e ações",
+									"nEvidences": 105
+								}
+							]
 						}
 					}
 				}
