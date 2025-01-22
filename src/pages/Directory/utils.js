@@ -10,11 +10,11 @@ import { pathURL } from "../../App";
 export function getDirectoryTable (t, id) {
   const directoriesHeaders = [
     [
-      {type: "SortingText", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
-      {type: "SortingText", bigWidth: "50%", name: t("DIRECTORY.table.application"), property: "name"},
-      {type: "SortingIcon", bigWidth: "10%", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declaration"},
-      {type: "SortingIcon", bigWidth: "10%", name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamp"},
-      {type: "SortingText", bigWidth: "20%", name: t("DIRECTORY.table.conformance_level"), property: "conformance", justifyCenter: true},
+      {type: "Text", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", bigWidth: "50%", name: t("DIRECTORY.table.application"), property: "name"},
+      {type: "Icon", bigWidth: "10%", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declaration"},
+      {type: "Icon", bigWidth: "10%", name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamp"},
+      {type: "Text", bigWidth: "20%", name: t("DIRECTORY.table.conformance_level"), property: "conformance", justifyCenter: true},
     ]
   ];
   
@@ -105,14 +105,10 @@ export function getTenCriticalAspectsTable(t) {
     [
       {id: "CT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
       {id: "CP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NCT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
       {id: "NCP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NAT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
-      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true}
     ]
   ]
 
@@ -142,14 +138,10 @@ export function getSuccessCriteriaTable(t) {
     [
       {id: "CT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
       {id: "CP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NCT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
       {id: "NCP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NAT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
-      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true}
     ]
   ]
 

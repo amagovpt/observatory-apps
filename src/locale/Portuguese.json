@@ -19,13 +19,13 @@
       "header_arial_label": "Cabeçalho da página do Observatório",
       "title": {
         "part1": "Observatório Português",
-        "part2": "da Acessibilidade Web"
+        "part2": "da Acessibilidade de Aplicações"
       },
       "welcome": {
-        "title": "Bem vindo ao Observatório Português da Acessibilidade Web",
-        "subtitle": "Conheça os indicadores e estado acessibilidade e usabilidade em sítios web e aplicações móveis portuguesas"
+        "title": "Bem vindo ao Observatório Português da Acessibilidade de Aplicações",
+        "subtitle": "Conheça os indicadores e estado acessibilidade e usabilidade em aplicações móveis portuguesas"
       },
-      "text": "O Observatório público das práticas de acessibilidade e usabilidade em sítios Web e aplicações móveis.",
+      "text": "O Observatório público das práticas de acessibilidade e usabilidade em aplicações móveis.",
       "NAV": {
         "location": "Acessibilidade.gov.pt",
         "observatory": "Observatório",
@@ -227,12 +227,12 @@
         }
       },
       "top5": {
-        "title": "Top 5 da Acessibilidade Web na Administração Pública",
+        "title": "Top 5 da Acessibilidade de Aplicações na Administração Pública",
         "last_updated": "Última atualização:",
         "paragraph": {
-          "part1": "Conheça os sítios Web com melhor classificação de",
+          "part1": "Conheça as aplicações móveis com melhor classificação de",
           "part2": "acessibilidade na Administração Pública, segundo",
-          "part3": "os critérios de boas práticas de acessibilidade WCAG 2.1."
+          "part3": "a lista dos 10 aspetos críticos de acessibilidade."
         },
         "numbers_link": "Mais números do Observatório",
         "button": "Consulte os dados do Observatório"
@@ -240,13 +240,12 @@
       "summary": {
         "title": "O Observatório em números",
         "average": {
-          "part1": "Média de classificação nos sites da",
+          "part1": "Média de classificação nas aplicações da",
           "part2": "Administração Pública"
         },
         "last_year": "no último ano",
-        "declarations": "Sítios Web com Declaração de Acessibilidade",
-        "badges": "Sítios Web com Selo de Usabilidade",
-        "websites": "Sítios Web",
+        "declarations": "Aplicações móveis com Declaração de Acessibilidade",
+        "badges": "Aplicações móveis com Selo de Usabilidade",
         "entities": "Entidades",
         "pages": "Páginas",
         "pages_without_errors": "Páginas sem erros",
@@ -286,7 +285,7 @@
       "declaration": {
         "title": "Declaração de Acessibilidade e Usabilidade",
         "paragraph": "O Observatório mantém atualizada a estatística e o nível de conformidade da Declaração prevista no Decreto-Lei n.º 83/2018.",
-        "subtitle1": "Sítios Web e aplicações móveis com Declaração de Acessibilidade",
+        "subtitle1": "Aplicações móveis com Declaração de Acessibilidade",
         "subtitle2": "Sítios Web com Declaração de Acessibilidade",
         "subtitle3": "Aplicações móveis com Declaração de Acessibilidade",
         "percentTitle": "% de declarações de usabilidade e acessibilidade",
@@ -297,7 +296,7 @@
       "badge": {
         "title": "Selo de Usabilidade e Acessibilidade",
         "paragraph": "O Observatório monitoriza e regista o número de distinções com o Selo de excelência e o nível atingido – Ouro, Prata ou Bronze.",
-        "subtitle1": "Sítios Web e aplicações móveis com Selo de Usabilidade",
+        "subtitle1": "Aplicações móveis com Selo de Usabilidade e Acessibilidade",
         "subtitle2": "Sítios Web com Selo de Usabilidade",
         "subtitle3": "Aplicações móveis com Selo de Usabilidade",
         "percentTitle": "% de selos de usabilidade e acessibilidade",
@@ -327,7 +326,7 @@
       "table": {
         "filter": "Filtro",
         "title": "Diretórios",
-        "subtitle": "Veja a acessibilidade dos sítios Web de algumas instituições e do governo",
+        "subtitle": "Veja a acessibilidade das aplicações de algumas instituições e do governo",
         "rank": "Classificação",
         "name": "Designação",
         "score": "Pontuação",

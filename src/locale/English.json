@@ -19,13 +19,13 @@
       "header_arial_label": "Observatory page header",
       "title": {
         "part1": "Portuguese Observatory",
-        "part2": "of Web Accessibility"
+        "part2": "of Applications Accessibility"
       },
       "welcome": {
-        "title": "Welcome to the Portuguese Web Accessibility Observatory",
-        "subtitle": "Discover the indicators and status of accessibility and usability on Portuguese websites and mobile applications"
+        "title": "Welcome to the Portuguese Applications Accessibility Observatory",
+        "subtitle": "Discover the indicators and status of accessibility and usability on Portuguese mobile applications"
       },
-      "text": "The Public Observatory of accessibility and usability practices on websites and mobile applications.",
+      "text": "The Public Observatory of accessibility and usability practices on mobile applications.",
       "NAV": {
         "location": "Acessibilidade.gov.pt",
         "observatory": "Observatory",
@@ -227,12 +227,12 @@
         }
       },
       "top5": {
-        "title": "Top 5 Web Accessibility in the Public Administration",
+        "title": "Top 5 Applications Accessibility in the Public Administration",
         "last_updated": "Last updated:",
         "paragraph": {
-          "part1": "Know the websites with the best ranking of",
+          "part1": "Know the mobile applications with the best ranking of",
           "part2": "accessibility in Public Administration, according to",
-          "part3": "WCAG 2.1 accessibility best practices criteria."
+          "part3": "the 10 critical aspects checklist."
         },
         "numbers_link": "More numbers from the Observatory",
         "button": "Consult the Observatory data"
@@ -286,7 +286,7 @@
       "declaration": {
         "title": "Accessibility and Usability Statement",
         "paragraph": "The Observatory keeps updated the statistics and the level of compliance of the Declaration provided for in Decree-Law No. 83/2018.",
-        "subtitle1": "Web sites and mobile applications with Declaration of Accessibility",
+        "subtitle1": "Mobile applications with Accessibility Declaration",
         "subtitle2": "Websites with Declaration of Accessibility",
         "subtitle3": "Mobile applications with Accessibility Declaration",
         "percentTitle": "% of usability and accessibility declarations",
@@ -297,7 +297,7 @@
       "badge": {
         "title": "Usability and Accessibility Badge",
         "paragraph": "The Observatory monitors and records the number of awards with the Seal of Excellence and the level reached - Gold, Silver or Bronze.",
-        "subtitle1": "Websites and mobile applications with Usability Badge",
+        "subtitle1": "Mobile applications with Usability and Accessibility Badge",
         "subtitle2": "Websites with Usability Badge",
         "subtitle3": "Mobile Applications with Usability Badge",
         "percentTitle": "% of usability and accessibility badges",
@@ -327,7 +327,7 @@
       "table": {
         "filter": "Filter",
         "title": "Directories",
-        "subtitle": "See the accessibility of several institutions and government websites",
+        "subtitle": "See the accessibility of several institutions and government applications",
         "rank": "Rank",
         "name": "Designation",
         "score": "Score",

@@ -10,11 +10,11 @@ import { pathURL } from "../../App";
 export function getDirectoryTable (t) {
   const directoriesHeaders = [
     [
-      {type: "SortingText", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
-      {type: "SortingText", bigWidth: "50%", name: t("DIRECTORY.table.application"), property: "name"},
-      {type: "SortingIcon", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declarations"},
-      {type: "SortingIcon", name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamps"},
-      {type: "SortingText", bigWidth: "20%", name: t("DIRECTORY.table.conformance_level"), property: "conformance", justifyCenter: true},
+      {type: "Text", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", bigWidth: "50%", name: t("DIRECTORIES.table.name"), property: "name"},
+      {type: "Icon", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declarations", justifyCenter: true},
+      {type: "Icon", name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamps", justifyCenter: true},
+      {type: "Text", bigWidth: "20%", name: t("DIRECTORY.table.conformance_level"), property: "conformance", justifyCenter: true},
     ]
   ];
   
