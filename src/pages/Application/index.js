@@ -102,7 +102,7 @@ export default function Application() {
   const [tenCriticalAspectsList, setTenCriticalAspectsList] = useState([]);
   const tenCriticalAspectsTableHeaders = [
     {type: "Text", name: t("APPLICATION.tables.classification"), property: "rank"},
-    {type: "Text", bigWidth: "50%", name: t("APPLICATION.tables.application"), property: "name"},
+    {type: "Text", bigWidth: "50%", name: t("APPLICATION.tables.critical_aspect"), property: "name"},
     {type: "Icon", name: "AMA-Check-Line", description: t("APPLICATION.ten_critical_aspects_table.note"), property: "conformity", justifyCenter: true},
     {type: "Text", name: t("APPLICATION.tables.evidences"), property: "nEvidences", justifyCenter: true}
   ];
@@ -111,7 +111,7 @@ export default function Application() {
   const [successCriteriaList, setSuccessCriteriaList] = useState([]);
   const successCriteriaTableHeaders = [
     {type: "Text", name: t("APPLICATION.tables.classification"), property: "rank"},
-    {type: "Text", bigWidth: "50%", name: t("APPLICATION.tables.application"), property: "name"},
+    {type: "Text", bigWidth: "50%", name: t("APPLICATION.tables.success_criteria"), property: "name"},
     {type: "Icon", name: "AMA-Check-Line", description: t("APPLICATION.success_criteria_table.note"), property: "conformity", justifyCenter: true},
     {type: "Text", name: t("APPLICATION.tables.evidences"), property: "nEvidences", justifyCenter: true}
   ];
@@ -211,12 +211,6 @@ export default function Application() {
       setTop3WorstPracticesList(tempData.top3WorstPracticesList)
     }
   }, []);
-
-  // useEffect to update the StatisticsHeader stats when language changes
-  {/* useEffect(() => {
-    if(!parsedData) return
-    setWebsiteStats(createStatisticsObject("website", parsedData.directories[id].websites[sitioId], moment))
-  }, [language]) */}
 
   return (
     <>

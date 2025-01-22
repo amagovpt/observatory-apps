@@ -1,155 +1,242 @@
 import { pathURL } from "../../App";
 
-// Secondary search function that checks if the text matches
-// website -> name of the website
-// text -> the text being searched
-export function _search (website, text) {
-    const parts = text.trim().toLowerCase().split(" ");
-    let hasText = true;
-
-    const totalText = (
-      website.name +
-      " " +
-      website.startingUrl +
-      " " +
-      (website.entity ?? "")
-    )
-      .trim()
-      .toLowerCase()
-      .normalize("NFD");
-
-    for (const part of parts ?? []) {
-      const normalizedText = part.normalize("NFD");
-
-      if (!totalText.includes(normalizedText)) {
-        hasText = false;
-      }
-    }
-
-    return hasText;
-}
-
-// Main search function that goes through the data
-// text -> the text being searched
-// setSearch -> function to set the text searched
-// setOtherData -> function to set the data to be showned
-// dataProcess -> data
-export function searchFuntion (text, dataProcess) {
-    let searchResults = []
-    if (text && text.trim() !== "" && text.trim().length > 2) {
-      dataProcess.directoriesList.map((directory) => {
-        dataProcess.directories[directory.id].applicationsList.map((application) => {
-          if(_search(application, text)) {
-            searchResults.push({
-              directoryName: directory.name,
-              directoryId: directory.id,
-              name: application.name,
-              id: application.id,
-              declaration: application.declaration,
-              stamp: application.stamp,
-              score: application.score,
-              nPages: application.nPages,
-            })
-          }
-          return ""
-        })
-        return ""
-      })
-      if (searchResults.length === 0) {
-        return []
-      } else {
-        return searchResults
-      }
-      
-    }
-
-    if (!text || text.trim() === "" || text.trim().length <= 2) {
-      return []
-    }
-}
-
-
 // Function to get additional Arrays
 // t -> the translation function
 // RETURNS
-// searchTableHeaders -> Headers for the search table
-// columnsOptionsSearch -> Options to tell the type to render with which property for search table
 // directoriesHeaders -> Headers for the main table
 // columnsOptions -> Options to tell the type to render with which property for main table
 // statsTitles -> Titles for the StatisticsHeader component
 // nameOfIcons -> Name of icons to be showned in the table
-export function getDirectoriesTable (t) {
-    const searchTableHeaders = [
-      {type: "SortingText", bigWidth: "40%", name: t("DIRECTORIES.search.directory"), property: "directoryName"},
-      {type: "SortingText", bigWidth: "40%", name: t("DIRECTORIES.search.website"), property: "name"},
-      {type: "SortingIcon", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORIES.table.declaration"), property: "declaration"},
-      {type: "SortingIcon", name: "AMA-SeloDark-Line", description: t("DIRECTORIES.table.stamp"), property: "stamp"},
-      {type: "SortingText", bigWidth: "10%", name: t("DIRECTORIES.search.score"), property: "score", justifyCenter: true},
-      {type: "SortingText", bigWidth: "10%", name: t("DIRECTORIES.search.n_pages"), property: "nPages", justifyCenter: true},
+export function getDirectoryTable (t) {
+  const directoriesHeaders = [
+    [
+      {type: "SortingText", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "SortingText", bigWidth: "50%", name: t("DIRECTORY.table.application"), property: "name"},
+      {type: "SortingIcon", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declarations"},
+      {type: "SortingIcon", name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamps"},
+      {type: "SortingText", bigWidth: "20%", name: t("DIRECTORY.table.conformance_level"), property: "conformance", justifyCenter: true},
     ]
-    
-    let columnsOptionsSearch = {
-      directoryName: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
-        return `${pathURL}directories/${row.directoryId}`
-      }},
-      directoryId: { type: "Skip", center: false, bold: false, decimalPlace: false },
-      name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
-        return `${pathURL}directories/${row.directoryId}/${row.id}`
-      }},
-      id: { type: "Skip", center: false, bold: false, decimalPlace: false },
-      declaration: { type: "Declaration", center: true, bold: false, decimalPlace: false },
-      stamp: { type: "Stamp", center: true, bold: false, decimalPlace: false },
-      score: { type: "Number", center: true, bold: false, decimalPlace: true },
-      nPages: { type: "Number", center: true, bold: false, decimalPlace: false },
-    }
-      
-    const directoriesHeaders = [
-      [
-        {type: "SortingText", nRow: 2, bigWidth: "10%", name: t("DIRECTORIES.table.rank"), property: "rank"},
-        {type: "SortingText", nRow: 2, bigWidth: "50%", name: t("DIRECTORIES.table.name"), property: "name"},
-        {type: "SortingIcon", nRow: 2, name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declaration"},
-        {type: "SortingIcon", nRow: 2, name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamp"},
-        {type: "SortingText", nRow: 2, bigWidth: "10%", name: t("DIRECTORIES.table.score"), property: "score", justifyCenter: true},
-        {type: "SortingText", nRow: 2, bigWidth: "10%", name: t("DIRECTORIES.table.websites"), property: "nWebsites", justifyCenter: true},
-        {id: "conformidade", type: "Text", nCol: 3, name: t("DIRECTORIES.table.levels"), property: "", justifyCenter: true, multiCol: true},
-      ],
-      [
-        {id: "A", type: "SortingText", bigWidth: "10%", name: t("DIRECTORIES.table.A"), property: "A", justifyCenter: true},
-        {id: "AA", type: "SortingText", bigWidth: "10%", name: t("DIRECTORIES.table.AA"), property: "AA", justifyCenter: true},
-        {id: "AAA", type: "SortingText", bigWidth: "10%", name: t("DIRECTORIES.table.AAA"), property: "AAA", justifyCenter: true}
-      ]
-    ]
-    
-    let columnsOptions = {
-      id: { type: "Skip", center: false, bold: false, decimalPlace: false },
-      rank: { type: "Number", center: true, bold: false, decimalPlace: false },
-      name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
-        return `${pathURL}directories/${row.id}`
-      }},
-      declarations: { type: "Number", center: true, bold: false, decimalPlace: false },
-      stamps: { type: "Number", center: true, bold: false, decimalPlace: false },
-      score: { type: "Number", center: true, bold: false, decimalPlace: true },
-      nWebsites: { type: "Number", center: true, bold: false, decimalPlace: false },
-      A: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "conformidade A" },
-      AA: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "conformidade AA" },
-      AAA: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "conformidade AAA" },
-    }
-    
-    let statsTitles = [
-      t("STATISTICS.directories"),
-      t("STATISTICS.entities"),
-      t("STATISTICS.websites"),
-      t("STATISTICS.pages")
-    ]
+  ];
+  
+  const columnsOptions = {
+    id: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
+      return `${pathURL}directories/${row.id}`
+    }},
+    declarations: { type: "Number", center: true, bold: false, decimalPlace: false },
+    stamps: { type: "Number", center: true, bold: false, decimalPlace: false },
+    conformance: { type: "Number", center: true, bold: false, decimalPlace: false }
+  };
 
-    let nameOfIcons = [
-      t("DIRECTORY.table.stamp_bronze"),
-      t("DIRECTORY.table.stamp_silver"),
-      t("DIRECTORY.table.stamp_gold"),
-      t("DIRECTORY.table.declaration_not_conform"),
-      t("DIRECTORY.table.declaration_partial_conform"),
-      t("DIRECTORY.table.declaration_conform")
-    ]
+  const paginationButtonsTexts = [
+    t("DIRECTORY.table.paginator.first_page"),
+    t("DIRECTORY.table.paginator.previous_page"),
+    t("DIRECTORY.table.paginator.next_page"),
+    t("DIRECTORY.table.paginator.last_page")
+  ];
 
-    return { searchTableHeaders, columnsOptionsSearch, directoriesHeaders, columnsOptions, statsTitles, nameOfIcons }
+  const nItemsPerPageText=[
+    t("DIRECTORY.table.paginator.see"),
+    t("DIRECTORY.table.paginator.per_page")
+  ];
+
+  const itemsPaginationText = [
+    t("DIRECTORY.table.paginator.of"),
+    t("DIRECTORY.table.paginator.items")
+  ];
+
+  return { directoriesHeaders, columnsOptions, paginationButtonsTexts, nItemsPerPageText, itemsPaginationText };
+}
+
+export function checkIfDirectoryOk (id, array) {
+  const idObejct = array.directoriesList.find(e => e.id === id);
+  return idObejct ? true : false;
+}
+
+export function createStats(data) {
+  return {
+    "avgConformance": data.avgConformance,
+    "maxConformance": data.maxConformance,
+    "minConformance": data.minConformance,
+    "nApplications": data.nApplications,
+    "nApplicationsWithGoldUsabilityAccessibilityStamp": data.nApplicationsWithGoldUsabilityAccessibilityStamp,
+    "nApplicationsWithSilverUsabilityAccessibilityStamp": data.nApplicationsWithSilverUsabilityAccessibilityStamp,
+    "nApplicationsWithBronzeUsabilityAccessibilityStamp": data.nApplicationsWithBronzeUsabilityAccessibilityStamp,
+    "nApplicationsWithAccessibilityDeclaration": data.nApplicationsWithAccessibilityDeclaration,
+    "nApplicationsWithCompliantAccessibilityDeclaration": data.nApplicationsWithCompliantAccessibilityDeclaration,
+    "nApplicationsWithPartiallyCompliantAccessibilityDeclaration": data.nApplicationsWithPartiallyCompliantAccessibilityDeclaration,
+    "nApplicationsWithNonCompliantAccessibilityDeclaration": data.nApplicationsWithNonCompliantAccessibilityDeclaration
+  }
+}
+
+export function getStatsTable(stats) {
+  return [
+    stats.nApplications,
+    stats.nApplicationsWithGoldUsabilityAccessibilityStamp,
+    stats.nApplicationsWithSilverUsabilityAccessibilityStamp,
+    stats.nApplicationsWithBronzeUsabilityAccessibilityStamp,
+    stats.nApplicationsWithAccessibilityDeclaration,
+    stats.nApplicationsWithCompliantAccessibilityDeclaration,
+    stats.nApplicationsWithPartiallyCompliantAccessibilityDeclaration,
+    stats.nApplicationsWithNonCompliantAccessibilityDeclaration
+  ];
+}
+
+export function getTenCriticalAspectsTable(t) {
+  const tenCriticalAspectsHeaders = [
+    [
+      {type: "Text", nRow: 2, bigWidth: "5%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", nRow: 2, bigWidth: "35%", name: t("DIRECTORY.table.critical_aspect"), property: "name"},
+      {id: "compliant", type: "Text", name: t("DIRECTORY.table.compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonCompliant", type: "Text", name: t("DIRECTORY.table.non_compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonApplicable", type: "Text", name: t("DIRECTORY.table.non_applicable"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+    ],
+    [
+      {id: "CT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
+      {id: "CP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "NCT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
+      {id: "NCP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "NAT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
+      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+    ]
+  ]
+
+  const tenCriticalAspectsColumnsOptions = {
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Text", center: false, bold: false, decimalPlace: false },
+    compliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "compliant CT" },
+    compliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "compliant CP" },
+    nonCompliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonCompliant NCT" },
+    nonCompliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonCompliant NCP" },
+    nonApplicableTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonApplicable NAT" },
+    nonApplicablePercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonApplicable NAP" },
+  }
+
+  return { tenCriticalAspectsHeaders, tenCriticalAspectsColumnsOptions };
+}
+
+export function getSuccessCriteriaTable(t) {
+  const successCriteriaHeaders = [
+    [
+      {type: "Text", nRow: 2, bigWidth: "5%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", nRow: 2, bigWidth: "35%", name: t("DIRECTORY.table.success_criteria"), property: "name"},
+      {id: "compliant", type: "Text", name: t("DIRECTORY.table.compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonCompliant", type: "Text", name: t("DIRECTORY.table.non_compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonApplicable", type: "Text", name: t("DIRECTORY.table.non_applicable"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+    ],
+    [
+      {id: "CT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
+      {id: "CP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "NCT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
+      {id: "NCP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "NAT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
+      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+    ]
+  ]
+
+  const successCriteriaColumnsOptions = {
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Text", center: false, bold: false, decimalPlace: false },
+    compliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "compliant CT" },
+    compliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "compliant CP" },
+    nonCompliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonCompliant NCT" },
+    nonCompliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonCompliant NCP" },
+    nonApplicableTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonApplicable NAT" },
+    nonApplicablePercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonApplicable NAP" },
+  }
+
+  return { successCriteriaHeaders, successCriteriaColumnsOptions };
+}
+
+export function getTop5ApplicationsTable(t) {
+  const top5ApplicationsHeaders = [
+    [
+      {type: "Text", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", bigWidth: "50%", name: t("DIRECTORY.table.application"), property: "name"},
+      {type: "Text", name: t("DIRECTORY.table.conformance_level"), property: "conformance"},
+    ]
+  ]
+
+  const top5ApplicationsColumnsOptions = {
+    directoryId: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    id: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
+      return `${pathURL}directories/${row.directoryId}/${row.id}`
+    }},
+    conformance: { type: "Number", center: true, bold: false, decimalPlace: false }
+  }
+
+  return { top5ApplicationsHeaders, top5ApplicationsColumnsOptions };
+}
+
+export function getApplicationsWithAccessibilityDeclarationTable(t) {
+  const applicationsWithAccessibilityDeclarationHeaders = [
+    [
+      {type: "Text", name: t("DIRECTORY.table.line"), property: "line"},
+      {type: "Text", name: t("DIRECTORY.table.application"), property: "name"},
+      {type: "Icon", name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declaration", justifyCenter: true}
+    ]
+  ];
+
+  const applicationsWithAccessibilityDeclarationColumnsOptions = {
+    directoryId: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    id: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    line: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
+      return `${pathURL}directories/${row.directoryId}/${row.id}`
+    }},
+    declaration: { type: "Declaration", center: true, bold: false, decimalPlace: false }
+  };
+
+  const applicationsWithAccessibilityDeclarationNameOfIcons = [
+    t("DIRECTORY.table.stamp_bronze"),
+    t("DIRECTORY.table.stamp_silver"),
+    t("DIRECTORY.table.stamp_gold"),
+    t("DIRECTORY.table.declaration_not_conform"),
+    t("DIRECTORY.table.declaration_partial_conform"),
+    t("DIRECTORY.table.declaration_conform")
+  ];
+
+  return { applicationsWithAccessibilityDeclarationHeaders, applicationsWithAccessibilityDeclarationColumnsOptions, applicationsWithAccessibilityDeclarationNameOfIcons };
+}
+
+export function getApplicationsWithUsabilityAndAccessibilityStampTable(t) {
+  const applicationsWithUsabilityAndAccessibilityStampHeaders = [
+    [
+      {type: "Text", name: t("DIRECTORY.table.line"), property: "line"},
+      {type: "Text", name: t("DIRECTORY.table.application"), property: "name"},
+      {type: "Icon", name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamp", justifyCenter: true}
+    ]
+  ];
+
+  const applicationsWithUsabilityAndAccessibilityStampColumnsOptions = {
+    directoryId: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    id: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    line: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
+      return `${pathURL}directories/${row.directoryId}/${row.id}`
+    }},
+    stamp: { type: "Stamp", center: true, bold: false, decimalPlace: false }
+  };
+
+  const applicationsWithUsabilityAndAccessibilityStampNameOfIcons = [
+    t("DIRECTORY.table.stamp_bronze"),
+    t("DIRECTORY.table.stamp_silver"),
+    t("DIRECTORY.table.stamp_gold"),
+    t("DIRECTORY.table.declaration_not_conform"),
+    t("DIRECTORY.table.declaration_partial_conform"),
+    t("DIRECTORY.table.declaration_conform")
+  ];
+
+  return { applicationsWithUsabilityAndAccessibilityStampHeaders, applicationsWithUsabilityAndAccessibilityStampColumnsOptions, applicationsWithUsabilityAndAccessibilityStampNameOfIcons };
 }

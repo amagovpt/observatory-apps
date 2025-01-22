@@ -148,13 +148,9 @@ export default function Directory() {
   const { applicationsWithAccessibilityDeclarationHeaders, applicationsWithAccessibilityDeclarationColumnsOptions, applicationsWithAccessibilityDeclarationNameOfIcons } = getApplicationsWithAccessibilityDeclarationTable(t, id);
   const [applicationsWithAccessibilityDeclarationList, setApplicationsWithAccessibilityDeclarationList] = useState([]);
 
-  console.log(applicationsWithAccessibilityDeclarationHeaders);
-
   // Data for Applications With Usability And Accessibility Stamp Table
   const { applicationsWithUsabilityAndAccessibilityStampHeaders, applicationsWithUsabilityAndAccessibilityStampColumnsOptions, applicationsWithUsabilityAndAccessibilityStampNameOfIcons } = getApplicationsWithUsabilityAndAccessibilityStampTable(t, id);
   const [applicationsWithUsabilityAndAccessibilityStampList, setApplicationsWithUsabilityAndAccessibilityStampList] = useState([]);
-
-  console.log(applicationsWithUsabilityAndAccessibilityStampHeaders);
 
   // Navigation options
   const breadcrumbs = [

@@ -456,6 +456,7 @@
       },
       "tables": {
         "critical_aspect": "Aspeto crítico",
+        "success_criteria": "Critério de sucesso",
         "classification": "Classificação",
         "application": "Aplicação",
         "evidences": "Número de evidências",

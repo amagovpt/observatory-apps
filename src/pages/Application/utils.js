@@ -25,8 +25,8 @@ export function getStatsTitles(t, global) {
 }
 
 export function getStatsTable(t, global, moment, pathURL) {
-  const declarationAlternativeText = [t("DIRECTORY.table.declaration_conform"), t("DIRECTORY.table.declaration_partially_conform"), t("DIRECTORY.table.declaration_not_conform")];
-  const stampAlternativeText = [t("DIRECTORY.table.stamp_gold"), t("DIRECTORY.table.stamp_silver"), t("DIRECTORY.table.stamp_bronze")];
+  const declarationAlternativeText = [t("DIRECTORY.table.declaration_not_conform"), t("DIRECTORY.table.declaration_partially_conform"), t("DIRECTORY.table.declaration_conform")];
+  const stampAlternativeText = [t("DIRECTORY.table.stamp_bronze"), t("DIRECTORY.table.stamp_silver"), t("DIRECTORY.table.stamp_gold")];
 
   var statsTable = [];
   var threshold = 1;
@@ -62,11 +62,11 @@ export function getStatsTable(t, global, moment, pathURL) {
 function getDeclaration(decl, pathURL) {
   switch(decl) {
     case 1:
-      return `${pathURL}img/SVG_Declaracao_Conforme.svg`;
+      return `${pathURL}img/SVG_Declaracao_Nao_Conforme.svg`;
     case 2:
       return `${pathURL}img/SVG_Declaracao_Parcial_Conforme.svg`;
     case 3:
-      return `${pathURL}img/SVG_Declaracao_Nao_Conforme.svg`;
+      return `${pathURL}img/SVG_Declaracao_Conforme.svg`;
     default:
       return null;
   }
@@ -75,11 +75,11 @@ function getDeclaration(decl, pathURL) {
 function getStamp(stmp, pathURL) {
   switch(stmp) {
     case 1:
-      return `${pathURL}img/SVG_Selo_Ouro.svg`;
+      return `${pathURL}img/SVG_Selo_Bronze.svg`;
     case 2:
       return `${pathURL}img/SVG_Selo_Prata.svg`;
     case 3:
-      return `${pathURL}img/SVG_Selo_Bronze.svg`;
+      return `${pathURL}img/SVG_Selo_Ouro.svg`;
     default:
       return null;
   }

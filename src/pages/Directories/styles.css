@@ -8,38 +8,20 @@
     background-color: var(--ama-color-background-light-darker) !important;
 }
 
-.search_container .field {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1 !important;
+.good_bad ul {
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
 }
 
-.search_container .field label {
-    color: var(--ama-color-background-white)
+.good_bad .ama.tabs-container .nav-tabs .nav-link.active {
+    background-color: transparent !important;
 }
 
-.search_container .field input {
-    margin-bottom: 0px;
-}
-
-.search_button {
-    background-color: var(--ama-color-background-white);
-    font-size: 30px;
-    align-self: flex-end;
-    height: 54px;
-    width: 93px;
-    border: 2px solid var(--ama-color-brand-primary);
-}
-
-.search_button:focus,
-.search_button:focus-visible {
-    box-shadow: 0 0 0 3px var(--ama-color-yellow-300) !important;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .search_container form {
-        flex-direction: column !important;
-    }
+.good_bad ul li {
+    font-weight: 700;
+    padding: 0px;
+    font-size: 22px;
+    line-height: 24px;
 }
 
 /* DARK MODE */

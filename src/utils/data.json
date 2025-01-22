@@ -4,286 +4,6 @@
 		"message": "NO_ERROR",
 		"errors": null,
 		"result": {
-			"nApplications": 9,
-			"nApplicationsWithAccessibilityDeclaration": 3,
-			"nApplicationsWithCompliantAccessibilityDeclaration": 1,
-			"nApplicationsWithPartiallyCompliantAccessibilityDeclaration": 1,
-			"nApplicationsWithNonCompliantAccessibilityDeclaration": 1,
-			"nApplicationsWithGoldUsabilityAccessibilityStamp": 1,
-			"nApplicationsWithSilverUsabilityAccessibilityStamp": 1,
-			"nApplicationsWithBronzeUsabilityAccessibilityStamp": 1,
-			"avgConformanceLevel": 7,
-			"maxConformanceLevel": 10,
-			"minConformanceLevel": 3,
-			"directoriesList": [
-				{
-					"id": 1,
-					"rank": 1,
-					"name": "Os 25 Portais + Procurados da AP",
-					"declarations": 3,
-					"stamps": 3,
-					"score": 8.486663447825674,
-					"nWebsites": 26,
-					"A": 0,
-					"AA": 1,
-					"AAA": 0
-				}
-			],
-			"tenCriticalAspectsList": [
-				{
-					"rank": 1,
-					"name": "Crie designs para ecrãs de dimensão reduzida",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 2,
-					"name": "Crie gestos simples e disponibilize opções acessíveis",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 3,
-					"name": "Forneça indicações para gestos e ações",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 4,
-					"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 5,
-					"name": "Permita a ativação da ampliação e o redimensionamento do texto",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				}
-			],
-			"successCriteriaList": [
-				{
-					"rank": 1,
-					"name": "Crie designs para ecrãs de dimensão reduzida",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 2,
-					"name": "Crie gestos simples e disponibilize opções acessíveis",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 3,
-					"name": "Forneça indicações para gestos e ações",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 4,
-					"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				},
-				{
-					"rank": 5,
-					"name": "Permita a ativação da ampliação e o redimensionamento do texto",
-					"compliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonCompliant": {
-						"total": 3,
-						"percentage": "33%"
-					},
-					"nonApplicable": {
-						"total": 3,
-						"percentage": "33%"
-					}
-				}
-			],
-			"top3BestPracticesList": [
-				{
-					"rank": 1,
-					"name": "Crie designs para ecrãs de dimensão reduzida",
-					"nApplications": 5
-				},
-				{
-					"rank": 2,
-					"name": "Crie gestos simples e disponibilize opções acessíveis",
-					"nApplications": 4
-				}
-			],
-			"top3WorstPracticesList": [	
-				{
-					"rank": 1,
-					"name": "Forneça indicações para gestos e ações",
-					"nApplications": 2
-				}
-			],
-			"top5Applications": [
-				{
-					"id": 2,
-					"rank": 1,
-					"name": "ePortugal",
-					"conformance": 6.6
-				},
-				{
-					"id": 4,
-					"rank": 2,
-					"name": "Portal da Defesa Nacional",
-					"conformance": 6.6
-				},
-				{
-					"id": 5,
-					"rank": 3,
-					"name": "Portal SNS",
-					"conformance": 6.6
-				},
-				{
-					"id": 9,
-					"rank": 4,
-					"name": "Portal do Governo de Portugal",
-					"conformance": 6.6
-				},
-				{
-					"id": 8,
-					"rank": 5,
-					"name": "Diário da República Portuguesa",
-					"conformance": 6.6
-				}
-			],
-			"accessibilityDeclarationApplicationsList": [
-				{
-					"id": 2,
-					"line": 1,
-					"name": "ePortugal",
-					"declaration": 1
-				},
-				{
-					"id": 4,
-					"line": 2,
-					"name": "Portal da Defesa Nacional",
-					"declaration": 2
-				},
-				{
-					"id": 3,
-					"line": 3,
-					"name": "Portal SNS",
-					"declaration": 3
-				}
-			],
-			"usabilityAccessibilityStampApplicationsList": [
-				{
-					"id": 2,
-					"line": 1,
-					"name": "ePortugal",
-					"stamp": 1
-				},
-				{
-					"id": 4,
-					"line": 2,
-					"name": "Portal da Defesa Nacional",
-					"stamp": 2
-				},
-				{
-					"id": 5,
-					"line": 3,
-					"name": "Portal SNS",
-					"stamp": 3
-				}
-			],
 			"score": 8.486663447825674,
 			"nDirectories": 1,
 			"nWebsites": 26,
@@ -334,6 +54,58 @@
 					"score": 9.0
 				}
 			],
+			"declarations": {
+				"total": {
+					"websites": {
+						"conform": 2,
+						"partial": 2,
+						"not_conform": 0
+					},
+					"apps": {
+						"conform": 0,
+						"partial": 0,
+						"not_conform": 0
+					}
+				},
+				"currentYear": {
+					"websites": {
+						"conform": 0,
+						"partial": 0,
+						"not_conform": 0
+					},
+					"apps": {
+						"conform": 0,
+						"partial": 0,
+						"not_conform": 0
+					}
+				}
+			},
+			"badges": {
+				"total": {
+					"websites": {
+						"gold": 1,
+						"silver": 1,
+						"bronze": 0
+					},
+					"apps": {
+						"gold": 0,
+						"silver": 0,
+						"bronze": 0
+					}
+				},
+				"currentYear": {
+					"websites": {
+						"gold": 0,
+						"silver": 0,
+						"bronze": 0
+					},
+					"apps": {
+						"gold": 0,
+						"silver": 0,
+						"bronze": 0
+					}
+				}
+			},
 			"topFiveBestPractices": [
 				{
 					"key": "listitem_01",
@@ -398,68 +170,232 @@
 					"n_websites": 20
 				}
 			],
-			"declarations": {
-				"total": {
-					"websites": {
-						"conform": 2,
-						"partial": 2,
-						"not_conform": 0
-					},
-					"apps": {
-						"conform": 0,
-						"partial": 0,
-						"not_conform": 0
-					}
-				},
-				"currentYear": {
-					"websites": {
-						"conform": 0,
-						"partial": 0,
-						"not_conform": 0
-					},
-					"apps": {
-						"conform": 0,
-						"partial": 0,
-						"not_conform": 0
-					}
+			"nApplications": 9,
+			"nApplicationsWithAccessibilityDeclaration": 3,
+			"nApplicationsWithCompliantAccessibilityDeclaration": 1,
+			"nApplicationsWithPartiallyCompliantAccessibilityDeclaration": 1,
+			"nApplicationsWithNonCompliantAccessibilityDeclaration": 1,
+			"nApplicationsWithGoldUsabilityAccessibilityStamp": 1,
+			"nApplicationsWithSilverUsabilityAccessibilityStamp": 1,
+			"nApplicationsWithBronzeUsabilityAccessibilityStamp": 1,
+			"avgConformance": 7,
+			"maxConformance": 10,
+			"minConformance": 3,
+			"directoriesList": [
+				{
+					"id": 1,
+					"rank": 1,
+					"name": "Os 25 Portais + Procurados da AP",
+					"declarations": 3,
+					"stamps": 3,
+					"conformance": 70
 				}
-			},
-			"badges": {
-				"total": {
-					"websites": {
-						"gold": 1,
-						"silver": 1,
-						"bronze": 0
-					},
-					"apps": {
-						"gold": 0,
-						"silver": 0,
-						"bronze": 0
-					}
+			],
+			"tenCriticalAspectsList": [
+				{
+					"rank": 1,
+					"name": "Crie designs para ecrãs de dimensão reduzida",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
 				},
-				"currentYear": {
-					"websites": {
-						"gold": 0,
-						"silver": 0,
-						"bronze": 0
-					},
-					"apps": {
-						"gold": 0,
-						"silver": 0,
-						"bronze": 0
-					}
+				{
+					"rank": 2,
+					"name": "Crie gestos simples e disponibilize opções acessíveis",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 3,
+					"name": "Forneça indicações para gestos e ações",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 4,
+					"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 5,
+					"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
 				}
-			},
-			"scoreDistributionFrequency": [
-				0,
-				0,
-				0,
-				0,
-				0,
-				70,
-				322,
-				588,
-				443
+			],
+			"successCriteriaList": [
+				{
+					"rank": 1,
+					"name": "Crie designs para ecrãs de dimensão reduzida",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 2,
+					"name": "Crie gestos simples e disponibilize opções acessíveis",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 3,
+					"name": "Forneça indicações para gestos e ações",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 4,
+					"name": "Permita o uso de múltiplos métodos de entrada e inserção de dados",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				},
+				{
+					"rank": 5,
+					"name": "Permita a ativação da ampliação e o redimensionamento do texto",
+					"compliantTotal": 3,
+					"compliantPercentage": "33%",
+					"nonCompliantTotal": 3,
+					"nonCompliantPercentage": "33%",
+					"nonApplicableTotal": 3,
+					"nonApplicablePercentage": "33%"
+				}
+			],
+			"top3BestPracticesList": [
+				{
+					"rank": 1,
+					"name": "Crie designs para ecrãs de dimensão reduzida",
+					"nApplications": 5
+				},
+				{
+					"rank": 2,
+					"name": "Crie gestos simples e disponibilize opções acessíveis",
+					"nApplications": 4
+				}
+			],
+			"top3WorstPracticesList": [	
+				{
+					"rank": 1,
+					"name": "Forneça indicações para gestos e ações",
+					"nApplications": 2
+				}
+			],
+			"top5Applications": [
+				{
+					"directoryId": 1,
+					"id": 2,
+					"rank": 1,
+					"name": "ePortugal",
+					"conformance": 66
+				},
+				{
+					"directoryId": 1,
+					"id": 4,
+					"rank": 2,
+					"name": "Portal da Defesa Nacional",
+					"conformance": 66
+				},
+				{
+					"directoryId": 1,
+					"id": 5,
+					"rank": 3,
+					"name": "Portal SNS",
+					"conformance": 66
+				},
+				{
+					"directoryId": 1,
+					"id": 9,
+					"rank": 4,
+					"name": "Portal do Governo de Portugal",
+					"conformance": 66
+				},
+				{
+					"directoryId": 1,
+					"id": 8,
+					"rank": 5,
+					"name": "Diário da República Portuguesa",
+					"conformance": 66
+				}
+			],
+			"accessibilityDeclarationApplicationsList": [
+				{
+					"directoryId": 1,
+					"id": 2,
+					"line": 1,
+					"name": "ePortugal",
+					"declaration": 3
+				},
+				{
+					"directoryId": 1,
+					"id": 4,
+					"line": 2,
+					"name": "Portal da Defesa Nacional",
+					"declaration": 2
+				},
+				{
+					"directoryId": 1,
+					"id": 3,
+					"line": 3,
+					"name": "Portal SNS",
+					"declaration": 1
+				}
+			],
+			"usabilityAccessibilityStampApplicationsList": [
+				{
+					"directoryId": 1,
+					"id": 2,
+					"line": 1,
+					"name": "ePortugal",
+					"stamp": 3
+				},
+				{
+					"directoryId": 1,
+					"id": 4,
+					"line": 2,
+					"name": "Portal da Defesa Nacional",
+					"stamp": 2
+				},
+				{
+					"directoryId": 1,
+					"id": 5,
+					"line": 3,
+					"name": "Portal SNS",
+					"stamp": 1
+				}
 			],
 			"errorDistribution": {
 				"errors": {
@@ -3332,12 +3268,12 @@
 							"ownerEntity": "Agência para a Modernização Administrativa",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -3434,12 +3370,12 @@
 							"ownerEntity": "Secretaria-Geral do Ministério da Justiça",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -3536,12 +3472,12 @@
 							"ownerEntity": "Secretaria-Geral do Ministério da Defesa Nacional",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -3638,12 +3574,12 @@
 							"ownerEntity": "Serviços Partilhados do Ministério da Saúde, E.P.E.",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -3740,12 +3676,12 @@
 							"ownerEntity": "Instituto do Emprego e Formação Profissional, I.P.",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -3842,12 +3778,12 @@
 							"ownerEntity": "Imprensa Nacional - Casa da Moeda",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -3944,12 +3880,12 @@
 							"ownerEntity": "Centro de Gestão da Rede Informática do Governo",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -4046,12 +3982,12 @@
 							"ownerEntity": "Assembleia da República",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},
@@ -4148,12 +4084,12 @@
 							"ownerEntity": "Direção-Geral da Educação",
 							"operatingSystem": "Android",
 							"accessibilityDeclaration": {
-								"declaration": 1,
+								"declaration": 3,
 								"state": "conformant",
 								"date": "2023-10-16T13:52:38.000Z"
 							},
 							"usabilityAccessibilityStamp": {
-								"stamp": 1,
+								"stamp": 3,
 								"stampLevel": "gold",
 								"validityDate": "2025-10-16T14:08:13.000Z"
 							},

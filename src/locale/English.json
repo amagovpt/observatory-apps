@@ -350,7 +350,7 @@
         "applications_with_declaration": "List of applications with accessibility declaration",
         "applications_with_stamp": "List of applications with usability and accessibility badge",
         "critical_aspect": "Critical aspect",
-        "success_criteria": "Success Criteria",
+        "success_criteria": "Success criterion",
         "compliant": "Compliant applications",
         "non_compliant": "Non compliant applications",
         "non_applicable": "Non applicable applications",
@@ -456,6 +456,7 @@
       },
       "tables": {
         "critical_aspect": "Critical aspect",
+        "success_criteria": "Success criterion",
         "classification": "Classification",
         "application": "Application",
         "evidences": "Number of evidences",

@@ -15,12 +15,23 @@ import moment from 'moment'
 import { ThemeContext } from "../../context/ThemeContext";
 
 // Components
-import { StatisticsHeader, SortingTable, Breadcrumb, LoadingComponent, Icon, Input } from "ama-design-system";
+import { SortingTable, Breadcrumb, LoadingComponent, Tabs } from "ama-design-system";
+
+// Extra Components
+import { GlobalStatisticsHeader } from "../../components/GlobalStatisticsHeader";
+import { GoodBadTab } from "./_components/goodBadTab";
 
 // Extra Data / Functions
-import { searchFuntion, getDirectoriesTable } from "./utils"
-
-import { createStatisticsObject } from '../../utils/utils'
+import {
+  createStats,
+  getApplicationsWithAccessibilityDeclarationTable,
+  getApplicationsWithUsabilityAndAccessibilityStampTable,
+  getDirectoryTable, 
+  getStatsTable, 
+  getSuccessCriteriaTable, 
+  getTenCriticalAspectsTable, 
+  getTop5ApplicationsTable 
+} from "./utils";
 
 import { pathURL } from "../../App";
 
@@ -32,27 +43,102 @@ export default function Directories() {
   const { theme } = useContext(ThemeContext);
   const main_content_directories = theme === "light" ? "" : "main_content_directories";
 
-  // Search and data for the search table
-  const [search, setSearch] = useState("");
-  const [otherData, setOtherData] = useState(null);
-
   const [error, setError] = useState();
 
   const [parsedData, setParsedData] = useState();
-
-  // Data for the main table
-  const [directoriesList, setDirectoriesList] = useState([]);
-
-  // Data for StatisticsHeader component
-  const [directoriesStats, setDirectoriesStats] = useState({
-    score: "0",
-    recentPage: "",
-    oldestPage: "",
-    statsTable: [0, 0, 0, 0]
+  
+  // Data for the GlobalStatisticsHeader component
+  const [stats, setStats] = useState({
+    avgConformance: 0,
+    maxConformance: 0,
+    minConformance: 0,
+    nApplications: 0,
+    nApplicationsWithGoldUsabilityAccessibilityStamp: 0,
+    nApplicationsWithSilverUsabilityAccessibilityStamp: 0,
+    nApplicationsWithBronzeUsabilityAccessibilityStamp: 0,
+    nApplicationsWithAccessibilityDeclaration: 0,
+    nApplicationsWithCompliantAccessibilityDeclaration: 0,
+    nApplicationsWithPartiallyCompliantAccessibilityDeclaration: 0,
+    nApplicationsWithNonCompliantAccessibilityDeclaration: 0
   });
 
-  // Data and Options for the Tables on this page
-  const { searchTableHeaders, columnsOptionsSearch, directoriesHeaders, columnsOptions, statsTitles, nameOfIcons } = getDirectoriesTable(t)
+  console.log(stats);
+
+  const statsTitles = [
+    t("STATISTICS.applications"),
+    t("STATISTICS.stamp.gold"),
+    t("STATISTICS.stamp.silver"),
+    t("STATISTICS.stamp.bronze"),
+    t("STATISTICS.declaration.total"),
+    t("STATISTICS.declaration.conform"),
+    t("STATISTICS.declaration.partially_conform"),
+    t("STATISTICS.declaration.non_conform")
+  ];
+  const statsTable = getStatsTable(stats);
+
+  // Data for the Directories Table
+  const { directoriesHeaders, columnsOptions, paginationButtonsTexts, nItemsPerPageText, itemsPaginationText } = getDirectoryTable(t);
+  const [directoriesList, setDirectoriesList] = useState([]);
+
+  // Data for Ten Critical Aspects Table
+  const { tenCriticalAspectsHeaders, tenCriticalAspectsColumnsOptions } = getTenCriticalAspectsTable(t);
+  const [tenCriticalAspectsList, setTenCriticalAspectsList] = useState([]);
+
+  // Data for Success Criteria Table
+  const { successCriteriaHeaders, successCriteriaColumnsOptions } = getSuccessCriteriaTable(t);
+  const [successCriteriaList, setSuccessCriteriaList] = useState([]);
+
+  // Tabs for 3 Best / Worst Critical Aspects
+  const tabsTableHeaders = [
+    {type: "Text", name: t("DIRECTORY.table.rank"), property: "rank"},
+    {type: "Text", name: t("DIRECTORY.table.critical_aspect"), property: "name"},
+    {type: "Text", name: t("DIRECTORY.table.applications"), property: "nApplications"}
+  ];
+  const tabsColumnOptions = {
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Text", center: false, bold: false, decimalPlace: false },
+    nApplications: { type: "Number", center: true, bold: false, decimalPlace: false }
+  };
+  const [top3BestPracticesList, setTop3BestPracticesList] = useState([]);
+  const [top3WorstPracticesList, setTop3WorstPracticesList] = useState([]);
+  const tabsGoodBad = [
+    {
+      eventKey: "tab1",
+      title: t("APPLICATION.tabs.best_practices"),
+      component:
+        <GoodBadTab
+          main_content_directories={main_content_directories}
+          columnsOptions={tabsColumnOptions}
+          tableHeaders={tabsTableHeaders}
+          table={top3BestPracticesList}
+          goodOrBad={"top_3_best_practices"}
+        />,
+    },
+    {
+      eventKey: "tab2",
+      title: t("APPLICATION.tabs.worst_practices"),
+      component:
+        <GoodBadTab
+          main_content_directories={main_content_directories}
+          columnsOptions={tabsColumnOptions}
+          tableHeaders={tabsTableHeaders}
+          table={top3WorstPracticesList}
+          goodOrBad={"top_3_worst_practices"}
+        />,
+    },
+  ];
+
+  // Data for Top 5 Applications Table
+  const { top5ApplicationsHeaders, top5ApplicationsColumnsOptions } = getTop5ApplicationsTable(t);
+  const [top5Applications, setTop5Applications] = useState([]);
+
+  // Data for Applications With Accessibility Declaration Table
+  const { applicationsWithAccessibilityDeclarationHeaders, applicationsWithAccessibilityDeclarationColumnsOptions, applicationsWithAccessibilityDeclarationNameOfIcons } = getApplicationsWithAccessibilityDeclarationTable(t);
+  const [applicationsWithAccessibilityDeclarationList, setApplicationsWithAccessibilityDeclarationList] = useState([]);
+
+  // Data for Applications With Usability And Accessibility Stamp Table
+  const { applicationsWithUsabilityAndAccessibilityStampHeaders, applicationsWithUsabilityAndAccessibilityStampColumnsOptions, applicationsWithUsabilityAndAccessibilityStampNameOfIcons } = getApplicationsWithUsabilityAndAccessibilityStampTable(t);
+  const [applicationsWithUsabilityAndAccessibilityStampList, setApplicationsWithUsabilityAndAccessibilityStampList] = useState([]);
 
   // Loading
   const [loading, setLoading] = useState(false);
@@ -75,9 +161,17 @@ export default function Directories() {
       if(err && err.code) {
         setError(t("MISC.unexpected_error") + " " + t("MISC.error_contact"));
       } else {
-        setDirectoriesStats(createStatisticsObject("directories", response.data?.result, moment))
-        setDirectoriesList(response.data?.result.directoriesList)
+        const tempData = response.data?.result;
         localStorage.setItem("observatorioData", JSON.stringify(response.data?.result));
+        setStats(createStats(tempData));
+        setDirectoriesList(tempData.directoriesList);
+        setTenCriticalAspectsList(tempData.tenCriticalAspectsList);
+        setSuccessCriteriaList(tempData.successCriteriaList);
+        setTop3BestPracticesList(tempData.top3BestPracticesList);
+        setTop3WorstPracticesList(tempData.top3WorstPracticesList);
+        setTop5Applications(tempData.top5Applications);
+        setApplicationsWithAccessibilityDeclarationList(tempData.accessibilityDeclarationApplicationsList);
+        setApplicationsWithUsabilityAndAccessibilityStampList(tempData.usabilityAccessibilityStampApplicationsList);
       }
       setLoading(false)
     }
@@ -88,21 +182,17 @@ export default function Directories() {
     } else {
       const parsedData = JSON.parse(storedData)
       setParsedData(parsedData)
-      setDirectoriesStats(createStatisticsObject("directories", parsedData, moment))
-      setDirectoriesList(parsedData.directoriesList)
+      setStats(createStats(parsedData));
+      setDirectoriesList(parsedData.directoriesList);
+      setTenCriticalAspectsList(parsedData.tenCriticalAspectsList);
+      setSuccessCriteriaList(parsedData.successCriteriaList);
+      setTop3BestPracticesList(parsedData.top3BestPracticesList);
+      setTop3WorstPracticesList(parsedData.top3WorstPracticesList);
+      setTop5Applications(parsedData.top5Applications);
+      setApplicationsWithAccessibilityDeclarationList(parsedData.accessibilityDeclarationApplicationsList);
+      setApplicationsWithUsabilityAndAccessibilityStampList(parsedData.usabilityAccessibilityStampApplicationsList);
     }
   }, [])
-
-  // useEffect to update the StatisticsHeader stats when language changes
-  useEffect(() => {
-    if(!parsedData) return
-    setDirectoriesStats(createStatisticsObject("directories", parsedData, moment))
-  }, [language])
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setOtherData(searchFuntion(search, parsedData))
-  }
 
   return (
     <>
@@ -120,80 +210,146 @@ export default function Directories() {
               <h1 className="bold my-2">{t("HEADER.NAV.directories")}</h1>
             </div>
 
-            {/* Statistics Header Component */}
+            {/* Global Statistics Header Component */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <StatisticsHeader
+              <GlobalStatisticsHeader
                 darkTheme={theme}
-                stats={directoriesStats}
+                stats={{
+                  avgConformance: stats.avgConformance,
+                  maxConformance: stats.maxConformance,
+                  minConformance: stats.minConformance,
+                  statsTable: statsTable
+                }}
                 statsTitles={statsTitles}
                 title={t("DIRECTORIES.statistics_title")}
                 subtitle={t("DIRECTORIES.statistics_subtitle")}
-                oldestPage={t("STATISTICS.oldest_page_updated")}
-                newestPage={t("STATISTICS.newest_page_updated")}
+                maxConformance={t("STATISTICS.max_conformance")}
+                minConformance={t("STATISTICS.min_conformance")}
                 gaugeTitle={[t("STATISTICS.gauge.label")]}
-                gaugeDescription={t("STATISTICS.gauge.description", {value: directoriesStats.score})}
-                buttons={false}
+                gaugeDescription={t("STATISTICS.gauge.description", {value: (stats.avgConformance * 10)})}
               />
             </section>
 
-            {/* MAIN Directories TABLE */}
+            {/* MAIN TABLE */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <div className="d-flex flex-column section_container py-4 m-0 directories_container">
-                <h2 className="bold pb-3 m-0">{t("DIRECTORIES.table.title")}</h2>
+              <div className="d-flex flex-column section_container py-4 directory_container">
+                <h2 className="bold m-0">{t("DIRECTORIES.table.title")}</h2>
+                <p className="ama-typography-body mb-4">{t("DIRECTORIES.table.subtitle")}</p>
                 <SortingTable
                   darkTheme={theme}
-                  hasSort={true}
+                  hasSort={false}
                   headers={directoriesHeaders}
                   setDataList={setDirectoriesList}
                   dataList={directoriesList}
-                  caption={t("DIRECTORIES.table.title")}
                   columnsOptions={columnsOptions}
+                  caption={t("DIRECTORIES.table.subtitle")}
                   project={`${pathURL}`}
-                  pagination={false}
+                  pagination={true}
+                  itemsPaginationTexts={itemsPaginationText}
+                  nItemsPerPageTexts={nItemsPerPageText}
+                  paginationButtonsTexts={paginationButtonsTexts}
                 />
-                <div className="ama-typography-body mt-4">{t("DIRECTORIES.table.note")}</div>
+
+                <div className="ama-typography-body mt-4">{t("DIRECTORY.table.note")}</div>
               </div>
             </section>
 
-            {/* SEARCH TABLE */}
-            <section className={`search_container ${main_content_directories} d-flex flex-row justify-content-center align-items-center`}>
-              <div className="d-flex flex-column section_container py-4">
-                <form className="d-flex flex-row justify-content-between mb-4" onSubmit={handleSubmit}>
-                  <Input
-                    darkTheme={theme}
-                    id="search"
-                    label={t("DIRECTORIES.search.label")}
-                    placeholder={t("DIRECTORIES.search.placeholder")}
-                    type="text"
-                    onChange={(e) => {
-                      if(e.target.value.length === 0) {
-                        setOtherData(null)
-                      }
-                      setSearch(e.target.value)
-                    }}
-                  />
-                  <button type="submit" className="search_button ms-1" aria-label={t("DIRECTORIES.search.search")}>
-                    <Icon name={"AMA-Pesquisar-Line"} />
-                  </button>
-                </form>
-                {search && otherData &&
-                  (otherData && otherData.length > 0 ?
-                    <SortingTable
-                      headers={searchTableHeaders}
-                      columnsOptions={columnsOptionsSearch}
-                      setDataList={setOtherData}
-                      dataList={otherData}
-                      darkTheme={theme}
-                      pagination={false}
-                      hasSort={true}
-                      caption={t("DIRECTORY.table.subtitle")+ " "}
-                      iconsAltTexts={nameOfIcons}
-                      project={`${pathURL}`}
-                    />
-                  :
-                    <div className="ama-typography-body-large">{t("DIRECTORIES.search.no_results")}</div>
-                  ) 
-                }
+            {/* Map of the “10 critical aspects” -- Add graph representation */}
+            <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
+              <div className="d-flex flex-column section_container py-4 directory_container">
+                <h2 className="bold mb-4">{t("APPLICATION.ten_critical_aspects_table.title")}</h2>
+                <SortingTable
+                  darkTheme={theme}
+                  hasSort={false}
+                  headers={tenCriticalAspectsHeaders}
+                  setDataList={setTenCriticalAspectsList}
+                  dataList={tenCriticalAspectsList}
+                  caption={t("APPLICATION.ten_critical_aspects_table.title")}
+                  columnsOptions={tenCriticalAspectsColumnsOptions}
+                  pagination={false}
+                  project={pathURL}
+                />
+              </div>
+            </section>
+
+            {/* Map of the success criteria -- Add graph representation */}
+            <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
+              <div className="d-flex flex-column section_container py-4 directory_container">
+                <h2 className="bold mb-4">{t("APPLICATION.success_criteria_table.title")}</h2>
+                <SortingTable
+                  darkTheme={theme}
+                  hasSort={false}
+                  headers={successCriteriaHeaders}
+                  setDataList={setSuccessCriteriaList}
+                  dataList={successCriteriaList}
+                  caption={t("APPLICATION.success_criteria_table.title")}
+                  columnsOptions={successCriteriaColumnsOptions}
+                  pagination={false}
+                  project={pathURL}
+                />
+              </div>
+            </section>
+
+            {/* Good / Bad section */}
+            <div className="good_bad">
+              <Tabs tabs={tabsGoodBad} defaultActiveKey="tab1" vertical={false} />
+            </div>
+
+            {/* Top 5 Applications Table */}
+            <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
+              <div className="d-flex flex-column section_container py-4 directory_container">
+                <h2 className="bold mb-4">{t("DIRECTORY.top_five_applications")}</h2>
+                <SortingTable
+                  darkTheme={theme}
+                  hasSort={false}
+                  headers={top5ApplicationsHeaders}
+                  setDataList={setTop5Applications}
+                  dataList={top5Applications}
+                  caption={t("DIRECTORY.top_five_applications")}
+                  columnsOptions={top5ApplicationsColumnsOptions}
+                  pagination={false}
+                  project={pathURL}
+                />
+
+                <div className="ama-typography-body mt-4">{t("DIRECTORY.table.note")}</div>
+              </div>
+            </section>
+
+            {/* List of applications with accessibility declaration */}
+            <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
+              <div className="d-flex flex-column section_container py-4 directory_container">
+                <h2 className="bold mb-4">{t("DIRECTORY.table.applications_with_declaration")}</h2>
+                <SortingTable
+                  darkTheme={theme}
+                  hasSort={false}
+                  headers={applicationsWithAccessibilityDeclarationHeaders}
+                  setDataList={setApplicationsWithAccessibilityDeclarationList}
+                  dataList={applicationsWithAccessibilityDeclarationList}
+                  caption={t("DIRECTORY.table.applications_with_declaration")}
+                  columnsOptions={applicationsWithAccessibilityDeclarationColumnsOptions}
+                  pagination={false}
+                  project={pathURL}
+                  iconsAltTexts={applicationsWithAccessibilityDeclarationNameOfIcons}
+                />
+              </div>
+            </section>
+
+            {/* List of applications with usability and accessibility stamp */}
+            <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
+              <div className="d-flex flex-column section_container py-4 directory_container">
+                <h2 className="bold mb-4">{t("DIRECTORY.table.applications_with_stamp")}</h2>
+                <SortingTable
+                  darkTheme={theme}
+                  hasSort={false}
+                  headers={applicationsWithUsabilityAndAccessibilityStampHeaders}
+                  setDataList={setApplicationsWithUsabilityAndAccessibilityStampList}
+                  dataList={applicationsWithUsabilityAndAccessibilityStampList}
+                  caption={t("DIRECTORY.table.applications_with_stamp")}
+                  columnsOptions={applicationsWithUsabilityAndAccessibilityStampColumnsOptions}
+                  pagination={false}
+                  project={pathURL}
+                  iconsAltTexts={applicationsWithUsabilityAndAccessibilityStampNameOfIcons}
+                />
               </div>
             </section>
           </div>
