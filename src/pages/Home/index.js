@@ -40,14 +40,15 @@ export default function Home() {
 
   const [parsedData, setParsedData] = useState();
 
+  const [latestRevision, setLatestRevision] = useState("");
+
   // Data for StatisticsHeader component
   const [directoriesStats, setDirectoriesStats] = useState(null);
 
   let statsTitles = [
     t("STATISTICS.directories"),
     t("STATISTICS.entities"),
-    t("STATISTICS.websites"),
-    t("STATISTICS.pages")
+    t("STATISTICS.applications")
   ]
 
   useEffect(() => {
@@ -60,7 +61,8 @@ export default function Home() {
       } else {
         setDirectoriesStats(createStatisticsObject("home", response.data?.result, moment))
         localStorage.setItem("observatorioData", JSON.stringify(response.data?.result));
-        setParsedData(response.data?.result)
+        setParsedData(response.data?.result);
+        setLatestRevision(moment(response.data?.result.recentPage).format("LL"));
       }
       setLoading(false)
     }
@@ -73,6 +75,7 @@ export default function Home() {
     if(!storedData) return;
     setParsedData(JSON.parse(storedData))
     setDirectoriesStats(createStatisticsObject("home", JSON.parse(storedData), moment))
+    setLatestRevision(moment(storedData.recentPage).format("LL"));
   }, [language])
 
   // Data for the censos section
@@ -108,17 +111,19 @@ export default function Home() {
               statsTitles={statsTitles}
               title={t("DIRECTORIES.statistics_title")}
               subtitle={t("DIRECTORIES.statistics_subtitle")}
+              oldestPage={t("APPLICATION.latest_revision")}
               gaugeTitle={[t("STATISTICS.gauge.label")]}
-              gaugeDescription={t("STATISTICS.gauge.description", {value: directoriesStats.score})}
+              gaugeDescription={t("STATISTICS.gauge.description", {value: directoriesStats.score * 10})}
+              gaugeType={"100"}
               buttons={false}
             />}
           </section>
 
-          {/* Top 5 websites section */}
+          {/* Top 5 applications section */}
           <section className={`${main_content_home} d-flex justify-content-center align-items-center my-6 top5_websites`}>
             <div className="flex-1 top5_div">
               <h2 className="bold mb-2">{t("HOME.top5.title")}</h2>
-              <div className="ama-typography-body">{t("HOME.top5.last_updated") + " " + directoriesStats.recentPage}</div>
+              <div className="ama-typography-body">{t("HOME.top5.last_updated") + " " + latestRevision}</div>
               <p className="ama-typography-body mt-2">{t("HOME.top5.paragraph.part1")+ " " +t("HOME.top5.paragraph.part2")+ " " +t("HOME.top5.paragraph.part3")}</p>
               <Button
                 text={t("HOME.top5.button")}
@@ -129,13 +134,13 @@ export default function Home() {
             </div>
             <div className="flex-1 top5_div">
               <ul>
-                {parsedData.topFiveWebsites.map((website) => (
+                {parsedData.top5Applications.map((application) => (
                   <li className="d-flex justify-content-between align-items-center mb-2">
                     <div className="d-flex flex-row align-items-center">
-                      <span className="ama-typography-body top5_number me-3">{website.index}</span>
-                      <a href="" className="top5_link ama-typography-body-large bold" onClick={() => navigate(`${pathURL}directories/${website.DirectoryId}/${website.id}`)}>{website.name}</a>
+                      <span className="ama-typography-body top5_number me-3">{application.rank}</span>
+                      <a href="" className="top5_link ama-typography-body-large bold" onClick={() => navigate(`${pathURL}directories/${application.directoryId}/${application.id}`)}>{application.name}</a>
                     </div>
-                    <span className="ama-typography-body-large bold">{(website.score).toFixed(1)}</span>
+                    <span className="ama-typography-body-large bold">{application.conformance}%</span>
                   </li>
                 ))}
               </ul>

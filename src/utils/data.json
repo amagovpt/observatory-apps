@@ -4,14 +4,9 @@
 		"message": "NO_ERROR",
 		"errors": null,
 		"result": {
-			"score": 8.486663447825674,
 			"nDirectories": 1,
-			"nWebsites": 26,
 			"nEntities": 24,
-			"nPages": 1423,
-			"nPagesWithoutErrors": 67,
-			"recentPage": "2023-10-16T14:42:10.000Z",
-			"oldestPage": "2023-10-16T13:28:01.000Z",
+			"recentPage": "2023-10-16T13:28:01.000Z",
 			"topFiveWebsites": [
 				{
 					"index": 1,

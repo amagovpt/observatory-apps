@@ -256,7 +256,7 @@ export default function Directories() {
 
             {/* Map of the “10 critical aspects” -- Add graph representation */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <div className="d-flex flex-column section_container py-4 directory_container">
+              <div className="d-flex flex-column section_container py-4 directories_container">
                 <h2 className="bold mb-4">{t("APPLICATION.ten_critical_aspects_table.title")}</h2>
                 <SortingTable
                   darkTheme={theme}
@@ -274,7 +274,7 @@ export default function Directories() {
 
             {/* Map of the success criteria -- Add graph representation */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <div className="d-flex flex-column section_container py-4 directory_container">
+              <div className="d-flex flex-column section_container py-4 directories_container">
                 <h2 className="bold mb-4">{t("APPLICATION.success_criteria_table.title")}</h2>
                 <SortingTable
                   darkTheme={theme}
@@ -297,7 +297,7 @@ export default function Directories() {
 
             {/* Top 5 Applications Table */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <div className="d-flex flex-column section_container py-4 directory_container">
+              <div className="d-flex flex-column section_container py-4 directories_container">
                 <h2 className="bold mb-4">{t("DIRECTORY.top_five_applications")}</h2>
                 <SortingTable
                   darkTheme={theme}
@@ -317,7 +317,7 @@ export default function Directories() {
 
             {/* List of applications with accessibility declaration */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <div className="d-flex flex-column section_container py-4 directory_container">
+              <div className="d-flex flex-column section_container py-4 directories_container">
                 <h2 className="bold mb-4">{t("DIRECTORY.table.applications_with_declaration")}</h2>
                 <SortingTable
                   darkTheme={theme}
@@ -336,7 +336,7 @@ export default function Directories() {
 
             {/* List of applications with usability and accessibility stamp */}
             <section className={`bg-white ${main_content_directories} d-flex flex-row justify-content-center align-items-center my-5`}>
-              <div className="d-flex flex-column section_container py-4 directory_container">
+              <div className="d-flex flex-column section_container py-4 directories_container">
                 <h2 className="bold mb-4">{t("DIRECTORY.table.applications_with_stamp")}</h2>
                 <SortingTable
                   darkTheme={theme}

@@ -95,14 +95,10 @@ export function getTenCriticalAspectsTable(t) {
     [
       {id: "CT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
       {id: "CP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NCT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
       {id: "NCP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NAT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
-      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true}
     ]
   ]
 
@@ -132,14 +128,10 @@ export function getSuccessCriteriaTable(t) {
     [
       {id: "CT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
       {id: "CP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NCT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
       {id: "NCP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
-    ],
-    [
       {id: "NAT", type: "Text", bigWidth: "5%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
-      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+      {id: "NAP", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true}
     ]
   ]
 
