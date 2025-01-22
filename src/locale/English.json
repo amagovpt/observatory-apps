@@ -69,8 +69,22 @@
     },
     "STATISTICS": {
       "gauge": {
-        "label": "Average score",
-        "description": "AccessMonitor score. Page rating: {{value}} out of 10"
+        "label": "Average conformance",
+        "description": "`10 critical aspects` checklist conformance level. Average conformance: {{value}}%"
+      },
+      "max_conformance": "Maximum conformance:",
+      "min_conformance": "Minimum conformance:",
+      "applications": "Applications",
+      "stamp": {
+        "gold": "Applications with gold badge",
+        "silver": "Applications with silver badge",
+        "bronze": "Applications with bronze badge"
+      },
+      "declaration": {
+        "total": "Applications with accessibility declaration",
+        "conform": "Fully compliant applications",
+        "partially_conform": "Partially compliant applications",
+        "non_conform": "Non compliant applications"
       },
       "directories": "Directories",
       "entities": "Entities",
@@ -333,6 +347,17 @@
       "statistics_title": "Statistics",
       "statistics_subtitle": "Metadata",
       "table": {
+        "critical_aspect": "Critical aspect",
+        "success_criteria": "Success Criteria",
+        "compliant": "Compliant applications",
+        "non_compliant": "Non compliant applications",
+        "non_applicable": "Non applicable applications",
+        "total": "Total",
+        "percentage": "Percentage",
+        "applications": "Number of applications",
+        "application": "Application",
+        "conformance": "Conformance",
+        "conformance_note": "Conformance with the `10 critical aspects` checklist",
         "filter": "Filter",
         "title": "Websites",
         "subtitle": "Statistics from the directory",
@@ -365,7 +390,16 @@
           "next_page": "Next page",
           "last_page": "Last page"
         }
-      }
+      },
+      "top_3_best_practices": {
+        "title": "The 3 best critical aspects",
+        "subtitle": "(Per n.º of applications)"
+      },
+      "top_3_worst_practices": {
+        "title": "The 3 worst critical aspects",
+        "subtitle": "(Per n.º of applications)"
+      },
+      "top_five_applications": "The top 5 applications"
     },
     "APPLICATION": {
       "title": "Portuguese Observatory of Applications Accessibility",
@@ -417,6 +451,7 @@
         "note": "Conformity with WCAG 2.1 success criteria"
       },
       "tables": {
+        "critical_aspect": "Critical aspect",
         "classification": "Classification",
         "application": "Application",
         "evidences": "Number of evidences",

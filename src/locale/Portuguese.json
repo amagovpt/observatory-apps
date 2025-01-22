@@ -69,8 +69,22 @@
     },
     "STATISTICS": {
       "gauge": {
-        "label": "Pontuação média",
-        "description": "Pontuação do AccessMonitor. Avaliação da página: {{value}} de 10"
+        "label": "Conformidade média",
+        "description": "Nível de conformidade com a checklist dos `10 aspetos críticos`. Conformidade média: {{value}}%"
+      },
+      "max_conformance": "Conformidade máxima:",
+      "min_conformance": "Conformidade mínima:",
+      "applications": "Aplicações",
+      "stamp": {
+        "gold": "Aplicações com selo de ouro",
+        "silver": "Aplicações com selo de prata",
+        "bronze": "Aplicações com selo de bronze"
+      },
+      "declaration": {
+        "total": "Aplicações com declaração de acessibilidade",
+        "conform": "Aplicações totalmente conformantes",
+        "partially_conform": "Aplicações parcialmente conformantes",
+        "non_conform": "Aplicações não conformantes"
       },
       "directories": "Diretórios",
       "entities": "Entidades",
@@ -333,6 +347,17 @@
       "statistics_title": "Estatísticas",
       "statistics_subtitle": "Metadados",
       "table": {
+        "critical_aspect": "Aspeto crítico",
+        "success_criteria": "Critério de sucesso",
+        "compliant": "Aplicações conformantes",
+        "non_compliant": "Aplicações não conformantes",
+        "non_applicable": "Aplicações não aplicáveis",
+        "total": "Total",
+        "percentage": "Percentagem",
+        "applications": "Número de aplicações",
+        "application": "Aplicação",
+        "conformance": "Conformidade",
+        "conformance_note": "Conformidade com a checklist `10 aspetos críticos`",
         "filter": "Filtro",
         "title": "Sítios Web",
         "subtitle": "Estatísticas do diretório",
@@ -365,7 +390,16 @@
           "next_page": "Página seguinte",
           "last_page": "Última página"
         }
-      }
+      },
+      "top_3_best_practices": {
+        "title": "Os 3 melhores aspetos críticos",
+        "subtitle": "(Por n.º de aplicações)"
+      },
+      "top_3_worst_practices": {
+        "title": "Os 3 piores aspetos críticos",
+        "subtitle": "(Por n.º de aplicações)"
+      },
+      "top_five_applications": "As 5 melhores aplicações"
     },
     "APPLICATION": {
       "title": "Observatório Português da Acessibilidade de Aplicações",
@@ -417,6 +451,7 @@
         "note": "Conformidade com os critérios de sucesso das WCAG 2.1"
       },
       "tables": {
+        "critical_aspect": "Aspeto crítico",
         "classification": "Classificação",
         "application": "Aplicação",
         "evidences": "Número de evidências",

@@ -1,83 +1,130 @@
 import { pathURL } from "../../App";
 
-// Function to get additional Arrays
-// t -> the translation function
-// RETURNS
-// directoriesHeaders -> Headers for the main table
-// columnsOptions -> Options to tell the type to render with which property for main table
-// statsTitles -> Titles for the StatisticsHeader component
-// nameOfIcons -> Name of icons to be showned in the table
-export function getDirectoryTable (t, id) {
-    const directoriesHeaders = [
-      [
-        {type: "SortingText", nRow: 2, bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
-        {type: "SortingText", nRow: 2, bigWidth: "50%", name: t("DIRECTORY.table.name"), property: "name"},
-        {type: "SortingIcon", nRow: 2, name: "AMA-DeclaracaoDark-Line", description: t("DIRECTORY.table.declaration"), property: "declaration"},
-        {type: "SortingIcon", nRow: 2, name: "AMA-SeloDark-Line", description: t("DIRECTORY.table.stamp"), property: "stamp"},
-        {type: "SortingText", nRow: 2, bigWidth: "10%", name: t("DIRECTORY.table.score"), property: "score", justifyCenter: true},
-        {type: "SortingText", nRow: 2, bigWidth: "10%", name: t("DIRECTORY.table.pages"), property: "nPages", justifyCenter: true},
-        {id: "conformidade", type: "Text", name: t("DIRECTORY.table.levels"), property: "", justifyCenter: true, multiCol: true, nCol: 3},
-      ],
-      [
-        {id: "A", type: "SortingText", bigWidth: "10%", name: t("DIRECTORY.table.A"), property: "A", justifyCenter: true},
-        {id: "AA", type: "SortingText", bigWidth: "10%", name: t("DIRECTORY.table.AA"), property: "AA", justifyCenter: true},
-        {id: "AAA", type: "SortingText", bigWidth: "10%", name: t("DIRECTORY.table.AAA"), property: "AAA", justifyCenter: true}
-      ]
-    ]
-    
-    let columnsOptions = {
-      id: { type: "Skip", center: false, bold: false, decimalPlace: false },
-      rank: { type: "Number", center: true, bold: false, decimalPlace: false },
-      name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
-        return `${pathURL}directories/${id}/${row.id}`
-      }},
-      entity: { type: "Skip", center: false, bold: false, decimalPlace: false },
-      declaration: { type: "Declaration", center: true, bold: false, decimalPlace: false },
-      stamp: { type: "Stamp", center: true, bold: false, decimalPlace: false },
-      score: { type: "Number", center: true, bold: false, decimalPlace: true },
-      nPages: { type: "Number", center: true, bold: false, decimalPlace: false },
-      A: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "conformidade A" },
-      AA: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "conformidade AA" },
-      AAA: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "conformidade AAA" },
-    }
-    
-    let statsTitles = [
-      t("STATISTICS.entities"),
-      t("STATISTICS.websites"),
-      t("STATISTICS.pages")
-    ]
-
-    let nameOfIcons = [
-      t("DIRECTORY.table.stamp_bronze"),
-      t("DIRECTORY.table.stamp_silver"),
-      t("DIRECTORY.table.stamp_gold"),
-      t("DIRECTORY.table.declaration_not_conform"),
-      t("DIRECTORY.table.declaration_partial_conform"),
-      t("DIRECTORY.table.declaration_conform")
-    ]
-
-    let paginationButtonsTexts = [
-      t("DIRECTORY.table.paginator.first_page"),
-      t("DIRECTORY.table.paginator.previous_page"),
-      t("DIRECTORY.table.paginator.next_page"),
-      t("DIRECTORY.table.paginator.last_page")
-    ]
-
-    let nItemsPerPageText=[
-      t("DIRECTORY.table.paginator.see"),
-      t("DIRECTORY.table.paginator.per_page")
-    ]
-
-    let itemsPaginationText = [
-      t("DIRECTORY.table.paginator.of"),
-      t("DIRECTORY.table.paginator.items")
-    ]
-
-    return { directoriesHeaders, columnsOptions, statsTitles, nameOfIcons, paginationButtonsTexts, nItemsPerPageText, itemsPaginationText }
-}
-
-
 export function checkIfDirectoryOk (id, array) {
   const idObejct = array.directoriesList.find(e => e.id === id)
   return idObejct ? true : false;
+}
+
+export function createStats(data) {
+  return {
+    "avgConformance": data.avgConformance,
+    "maxConformance": data.maxConformance,
+    "minConformance": data.minConformance,
+    "nApplications": data.nApplications,
+    "nApplicationsWithGoldUsabilityAccessibilityStamp": data.nApplicationsWithGoldUsabilityAccessibilityStamp,
+    "nApplicationsWithSilverUsabilityAccessibilityStamp": data.nApplicationsWithSilverUsabilityAccessibilityStamp,
+    "nApplicationsWithBronzeUsabilityAccessibilityStamp": data.nApplicationsWithBronzeUsabilityAccessibilityStamp,
+    "nApplicationsWithAccessibilityDeclaration": data.nApplicationsWithAccessibilityDeclaration,
+    "nApplicationsWithCompliantAccessibilityDeclaration": data.nApplicationsWithCompliantAccessibilityDeclaration,
+    "nApplicationsWithPartiallyCompliantAccessibilityDeclaration": data.nApplicationsWithPartiallyCompliantAccessibilityDeclaration,
+    "nApplicationsWithNonCompliantAccessibilityDeclaration": data.nApplicationsWithNonCompliantAccessibilityDeclaration
+  }
+}
+
+export function getStatsTable(stats) {
+  return [
+    stats.nApplications,
+    stats.nApplicationsWithGoldUsabilityAccessibilityStamp,
+    stats.nApplicationsWithSilverUsabilityAccessibilityStamp,
+    stats.nApplicationsWithBronzeUsabilityAccessibilityStamp,
+    stats.nApplicationsWithAccessibilityDeclaration,
+    stats.nApplicationsWithCompliantAccessibilityDeclaration,
+    stats.nApplicationsWithPartiallyCompliantAccessibilityDeclaration,
+    stats.nApplicationsWithNonCompliantAccessibilityDeclaration
+  ];
+}
+
+export function getTenCriticalAspectsTable(t, id) {
+  const tenCriticalAspectsHeaders = [
+    [
+      {type: "Text", nRow: 2, bigWidth: "5%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", nRow: 2, bigWidth: "50%", name: t("DIRECTORY.table.critical_aspect"), property: "name"},
+      {id: "compliant", type: "Text", name: t("DIRECTORY.table.compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonCompliant", type: "Text", name: t("DIRECTORY.table.non_compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonApplicable", type: "Text", name: t("DIRECTORY.table.non_applicable"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+    ],
+    [
+      {id: "cTotal", type: "Text", bigWidth: "7%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
+      {id: "cPercentage", type: "Text", bigWidth: "8%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "ncTotal", type: "Text", bigWidth: "7%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
+      {id: "ncPercentage", type: "Text", bigWidth: "8%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "naTotal", type: "Text", bigWidth: "7%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
+      {id: "naPercentage", type: "Text", bigWidth: "8%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+    ]
+  ]
+
+  const tenCriticalAspectsColumnsOptions = {
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Text", center: false, bold: false, decimalPlace: false },
+    compliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "compliant cTotal" },
+    compliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "compliant cPercentage" },
+    nonCompliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonCompliant ncTotal" },
+    nonCompliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonCompliant ncPercentage" },
+    nonApplicableTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonApplicable naTotal" },
+    nonApplicablePercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonApplicable naPercentage" },
+  }
+
+  return { tenCriticalAspectsHeaders, tenCriticalAspectsColumnsOptions };
+}
+
+export function getSuccessCriteriaTable(t, id) {
+  const successCriteriaHeaders = [
+    [
+      {type: "Text", nRow: 2, bigWidth: "5%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", nRow: 2, bigWidth: "50%", name: t("DIRECTORY.table.success_criteria"), property: "name"},
+      {id: "compliant", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonCompliant", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.non_compliant"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+      {id: "nonApplicable", type: "Text", bigWidth: "15%", name: t("DIRECTORY.table.non_applicable"), property: "", justifyCenter: true, multiCol: true, nCol: 2},
+    ],
+    [
+      {id: "cTotal", type: "Text", bigWidth: "7%", name: t("DIRECTORY.table.total"), property: "compliantTotal", justifyCenter: true},
+      {id: "cPercentage", type: "Text", bigWidth: "8%", name: t("DIRECTORY.table.percentage"), property: "compliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "ncTotal", type: "Text", bigWidth: "7%", name: t("DIRECTORY.table.total"), property: "nonCompliantTotal", justifyCenter: true},
+      {id: "ncPercentage", type: "Text", bigWidth: "8%", name: t("DIRECTORY.table.percentage"), property: "nonCompliantPercentage", justifyCenter: true},
+    ],
+    [
+      {id: "naTotal", type: "Text", bigWidth: "7%", name: t("DIRECTORY.table.total"), property: "nonApplicableTotal", justifyCenter: true},
+      {id: "naPercentage", type: "Text", bigWidth: "8%", name: t("DIRECTORY.table.percentage"), property: "nonApplicablePercentage", justifyCenter: true},
+    ]
+  ]
+
+  const successCriteriaColumnsOptions = {
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Text", center: false, bold: false, decimalPlace: false },
+    compliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "compliant cTotal" },
+    compliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "compliant cPercentage" },
+    nonCompliantTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonCompliant ncTotal" },
+    nonCompliantPercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonCompliant ncPercentage" },
+    nonApplicableTotal: { type: "Number", center: true, bold: false, decimalPlace: false, headers: "nonApplicable naTotal" },
+    nonApplicablePercentage: { type: "Text", center: true, bold: false, decimalPlace: false, headers: "nonApplicable naPercentage" },
+  }
+
+  return { successCriteriaHeaders, successCriteriaColumnsOptions };
+}
+
+export function getTop5ApplicationsTable(t, id) {
+  const top5ApplicationsHeaders = [
+    [
+      {type: "Text", bigWidth: "10%", name: t("DIRECTORY.table.rank"), property: "rank"},
+      {type: "Text", bigWidth: "50%", name: t("DIRECTORY.table.application"), property: "name"},
+      {type: "Text", name: t("DIRECTORY.table.conformance"), property: "conformance"},
+    ]
+  ]
+
+  const top5ApplicationsColumnsOptions = {
+    id: { type: "Skip", center: false, bold: false, decimalPlace: false },
+    rank: { type: "Number", center: true, bold: false, decimalPlace: false },
+    name: { type: "Link", center: false, bold: false, decimalPlace: false, href: (row) => {
+      return `${pathURL}directories/${id}/${row.id}`
+    }},
+    conformance: { type: "Number", center: true, bold: false, decimalPlace: false }
+  }
+
+  return { top5ApplicationsHeaders, top5ApplicationsColumnsOptions };
 }

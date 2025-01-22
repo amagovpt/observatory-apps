@@ -2,6 +2,22 @@
     background-color: var(--ama-color-background-light-darker) !important;
 }
 
+.good_bad ul {
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
+}
+
+.good_bad .ama.tabs-container .nav-tabs .nav-link.active {
+    background-color: transparent !important;
+}
+
+.good_bad ul li {
+    font-weight: 700;
+    padding: 0px;
+    font-size: 22px;
+    line-height: 24px;
+}
+
 /* DARK MODE */
 .main_content_directory {
     background-color: var(--ama-color-background-dark-lighter) !important;

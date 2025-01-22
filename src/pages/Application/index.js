@@ -132,7 +132,7 @@ export default function Application() {
   // Tabs
   const tabsTableHeaders = [
     {type: "Text", name: t("APPLICATION.tables.classification"), property: "rank"},
-    {type: "Text", name: t("APPLICATION.tables.application"), property: "name"},
+    {type: "Text", name: t("APPLICATION.tables.critical_aspect"), property: "name"},
     {type: "Text", name: t("APPLICATION.tables.evidences"), property: "nEvidences"}
   ];
   const tabsColumnOptions = {
