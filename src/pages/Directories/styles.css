@@ -1,0 +1,53 @@
+.search_container {
+    background-color: var(--ama-color-brand-primary);
+    color: var(--ama-color-background-white);
+}
+
+.directories_container .ama.sorting_table_responsive tbody tr:hover,
+.search_container .ama.sorting_table_responsive tbody tr:hover {
+    background-color: var(--ama-color-background-light-darker) !important;
+}
+
+.good_bad ul {
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
+}
+
+.good_bad .ama.tabs-container .nav-tabs .nav-link.active {
+    background-color: transparent !important;
+}
+
+.good_bad ul li {
+    font-weight: 700;
+    padding: 0px;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* DARK MODE */
+.main_content_directories {
+    background-color: var(--ama-color-background-dark-lighter) !important;
+    color: var(--ama-color-background-white);
+}
+
+.main_dark .observatorio {
+    color: var(--ama-color-grey-900);
+    background-color: var(--ama-color-text-blue);
+    border-color: transparent;
+}
+
+.main_dark .page_title,
+.main_content_directories .section_container h3 {
+    color: var(--ama-color-background-white);
+}
+
+.main_content_directories .directories_container .ama.sorting_table_responsive tbody tr:hover,
+.main_content_directories.search_container .ama.sorting_table_responsive tbody tr:hover {
+    background-color: var(--ama-color-background-dark-darker) !important;
+}
+
+.main_content_directories .search_button {
+    border-color: var(--ama-color-text-blue);
+    color: var(--ama-color-text-blue);
+    background-color: transparent;
+}
