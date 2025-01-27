@@ -232,3 +232,132 @@ export function getApplicationsWithUsabilityAndAccessibilityStampTable(t) {
 
   return { applicationsWithUsabilityAndAccessibilityStampHeaders, applicationsWithUsabilityAndAccessibilityStampColumnsOptions, applicationsWithUsabilityAndAccessibilityStampNameOfIcons };
 }
+
+export function getGraphs(t, dataList, dataForBars, dataForLines, nApplications, theme) {
+  const graphHeaders = dataList.map(() => {
+    return [
+      t("APPLICATION.tables.compliant"),
+      t("APPLICATION.tables.not_compliant"),
+      t("APPLICATION.tables.not_applicable")
+    ];
+  });
+
+  let graphs = [];
+
+  dataList.map((value, index) => {
+    const name = value.name;
+
+    const graphData = {
+        labels: graphHeaders[index],
+        datasets: [
+          {
+            type: 'line',
+            label: t("DIALOGS.scores.cumulative"),
+            data: dataForLines[index],
+            backgroundColor: 'rgba(51, 51, 153, 1)',
+            borderColor: 'rgba(51, 51, 153, 1)',
+            borderWidth: 2,
+            fill: false,
+            tension: 0,
+            pointBackgroundColor: 'red', // Set the color of the dots
+            pointBorderColor: 'red',     // Set the border color of the dots
+          },
+          {
+            type: 'bar',
+            label: t("DIALOGS.scores.frequency"),
+            data: dataForBars[index],
+            backgroundColor: [      
+              '#15ac51',
+              '#e90018',
+              '#f3d609'
+            ],
+            borderWidth: 0,
+          }
+        ]
+    };
+
+    const graphOptions = {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              color: theme === "light" ? 'rgba(0,0,0, 1)' : 'white', // Color of the legend text
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function (context) {
+                let label = context.dataset.label || '';
+                if (label) {
+                  label += ': ';
+                }
+                if (context.dataset.type === 'bar') {
+                  // Format the tooltip for bar dataset
+                  const nApps = (context.raw*nApplications/100).toFixed(0)
+                  return [
+                    `${label}${context.raw}%`,      // Main value
+                    `${t("DIALOGS.scores.frequency")}: ${nApps}` // Additional value
+                  ];
+                } else if (context.dataset.type === 'line') {
+                  // Format the tooltip for line dataset
+                  const nApps = (context.raw*nApplications/100).toFixed(0)
+                  return [
+                    `${label}${context.raw}%`,      // Main value
+                    `${t("DIALOGS.scores.percentage")}: ${nApps}` // Additional value
+                  ];
+                }
+                return label;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: t("DIALOGS.scores.conformance_state"),
+              color: theme === "light" ? 'rgba(0,0,0, 1)' : 'white', // Color of Title on X axis
+              font: {
+                size: 14
+              }
+            },
+            ticks: {
+              font: {
+                size: 14
+              },
+              color: theme === "light" ? 'rgba(0,0,0, 1)' : 'white' // Color of Text on X axis
+            },
+            grid: {
+              color: theme === "light" ? 'rgba(0,0,0, 0.1)' : 'rgba(255, 255, 255, 0.2)' // Color of Dividers vertically
+            }
+          },
+          y: {
+            min: 0,
+            max: 100,
+            title: {
+              display: true,
+              text: t("DIALOGS.scores.percentage_label"),
+              color: theme === "light" ? 'rgba(0,0,0, 1)' : 'white', // Color of Title on Y axis
+              font: {
+                size: 14
+              }
+            },
+            ticks: {
+              font: {
+                size: 14,
+              },
+              color: theme === "light" ? 'rgba(0,0,0, 1)' : 'white' // Color of Text on Y axis
+            },
+            grid: {
+              color: theme === "light" ? 'rgba(0,0,0, 0.1)' : 'rgba(255, 255, 255, 0.2)' // Color of Dividers horizontaly
+            }
+          }
+        }
+      }
+
+      graphs.push({name, graphData, graphOptions});
+  });
+
+  return graphs;
+}

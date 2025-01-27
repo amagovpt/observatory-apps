@@ -20,6 +20,7 @@ import { SortingTable, Breadcrumb, LoadingComponent, Tabs } from "ama-design-sys
 // Extra Components
 import { GlobalStatisticsHeader } from "../../components/GlobalStatisticsHeader";
 import { GoodBadTab } from "./_components/goodBadTab";
+import { GraphTableTabs } from "./_components/graphTableTabs";
 
 // Extra Data / Functions
 import { 
@@ -270,38 +271,32 @@ export default function Directory() {
               </div>
             </section>
 
-            {/* Map of the “10 critical aspects” -- Add graph representation */}
+            {/* Map of the “10 critical aspects” */}
             <section className={`bg-white ${main_content_directory} d-flex flex-row justify-content-center align-items-center my-5`}>
               <div className="d-flex flex-column section_container py-4 directory_container">
                 <h2 className="bold mb-4">{t("APPLICATION.ten_critical_aspects_table.title")}</h2>
-                <SortingTable
-                  darkTheme={theme}
-                  hasSort={false}
-                  headers={tenCriticalAspectsHeaders}
-                  setDataList={setTenCriticalAspectsList}
+                <GraphTableTabs
+                  nApplications={stats.nApplications}
                   dataList={tenCriticalAspectsList}
-                  caption={t("APPLICATION.ten_critical_aspects_table.title")}
-                  columnsOptions={tenCriticalAspectsColumnsOptions}
-                  pagination={false}
-                  project={pathURL}
+                  setDataList={setTenCriticalAspectsList}
+                  headers={tenCriticalAspectsHeaders}
+                  options={tenCriticalAspectsColumnsOptions}
+                  caption={t("APPLICATION.ten_critical_aspects_table.title")} 
                 />
               </div>
             </section>
 
-            {/* Map of the success criteria -- Add graph representation */}
+            {/* Map of the success criteria */}
             <section className={`bg-white ${main_content_directory} d-flex flex-row justify-content-center align-items-center my-5`}>
               <div className="d-flex flex-column section_container py-4 directory_container">
                 <h2 className="bold mb-4">{t("APPLICATION.success_criteria_table.title")}</h2>
-                <SortingTable
-                  darkTheme={theme}
-                  hasSort={false}
-                  headers={successCriteriaHeaders}
-                  setDataList={setSuccessCriteriaList}
+                <GraphTableTabs
+                  nApplications={stats.nApplications}
                   dataList={successCriteriaList}
-                  caption={t("APPLICATION.success_criteria_table.title")}
-                  columnsOptions={successCriteriaColumnsOptions}
-                  pagination={false}
-                  project={pathURL}
+                  setDataList={setSuccessCriteriaList}
+                  headers={successCriteriaHeaders}
+                  options={successCriteriaColumnsOptions}
+                  caption={t("APPLICATION.success_criteria_table.title")} 
                 />
               </div>
             </section>

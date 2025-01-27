@@ -110,12 +110,12 @@
       "element": "Type of element",
       "scores": {
         "title": "Score distribution",
-        "chart_title": "Graph",
+        "charts_title": "Graphs",
         "table": "Table",
-        "frequency": "Frequency (n.º of pages)",
-        "percentage": "Cumulative frequency (n.º of pages)",
+        "frequency": "Frequency (n.º of applications)",
+        "percentage": "Cumulative frequency (n.º of applications)",
         "percentage_label": "Percentage (%)",
-        "range": "Range",
+        "conformance_state": "Conformance state",
         "cumulative": "Cumulative frequency"
       },
       "errors": {
