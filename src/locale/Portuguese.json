@@ -110,12 +110,12 @@
       "element": "Tipo de elemento",
       "scores": {
         "title": "Distribuição de pontuações",
-        "chart_title": "Gráfico",
+        "charts_title": "Gráficos",
         "table": "Tabela",
-        "frequency": "Frequência (n.º de páginas)",
-        "percentage": "Frequência acumulada (n.º de páginas)",
+        "frequency": "Frequência (n.º de aplicações)",
+        "percentage": "Frequência acumulada (n.º de aplicações)",
         "percentage_label": "Percentagem (%)",
-        "range": "Intervalo",
+        "conformance_state": "Estado de conformidade",
         "cumulative": "Frequência acumulada"
       },
       "errors": {
